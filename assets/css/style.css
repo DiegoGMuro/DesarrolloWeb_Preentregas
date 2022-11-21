@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body{background-color: rgba(128, 128, 128, 0.11);
+}
+
+nav {
+	position: relative;
+	bottom: 70px;
+	left: 500px;
+}
+
+
+.navBackground {
+	background-color: rgb(36, 173, 241);
+	position: sticky;
+	top: 0px;
+}
+.navBackground img {
+	padding: 05px;
+}
+
+/* Etiquetas textos */
+h1{
+    color:#fffffe;
+    font-size: 50px;
+    font-weight:200;
+    font-family: 'Lobster', cursive;
+
+}
+
+
+p{
+    color:#020e0a;
+    font-size: 16px;
+    font-weight:normal;
+    font-style: italic;
+    font-family: cursive;
+}
+
+/* Cabecera */
+header{
+    background-color: #1da59e;
+}
+
+/* Menu */
+nav ul{
+    font-size:30px;
+}
+
+/* Herencia */
+nav ul li{
+    color:#010511ce;
+    font-weight: bold;
+}
+
+
+nav ul li a{
+    color:#000707;
+    font-size: 20px;
+    font-style: normal;
+    
+    
+    
+}
+
+/* Secciones secundarias */
+section{
+    background-color: #0b3502b6;
+}
+
+
+.foto{
+    width: 100%;  
+}
+  
+
+.texto-rojo{
+      color:red;
+      background-color: yellow;
+}
+
+
+#cualquiera{
+    background-color: #004643;
+}
+
+
+#video{
+    background-color: #abd1c6;
+}
+
+
+/* Pie de pagina */
+
+footer{
+    background-color: crimson;
+}
+
+
+footer p{
+   color:white; 
+}
+
+
+li{
+    display: inline-block;
+    padding-left: 0.5px;
+    padding-right: 0.5px;
+ 
+   
+}
+
+
+ul ul {
+    position: relative;
+    display: none;
+ }
+ ul ul li {
+    display: block;
+    width:200px;
+    padding: 5px;
+ }
+ ul ul li a {
+    color: white;
+    font-size: medium;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+}
+ ul li:hover ul {
+    position: absolute;
+    display:block;
+    background-color: darkblue;
+ }
+ .parametroPosition{width: 80%; height: 80%;}
+
+.cuadradoAzul{
+	width: 500px;
+	height: 500px;
+	background-color: darkblue;
+	position: relative;
+
+}
+
+.cuadradoRojo{
+	width: 1000px;
+	height: 500px;
+	background-color: red;
+	position: relative;
+	
+}
+
+h2{
+    color:#fffffe;
+
+}
+
+th{
+    color:#fffffe;
+
+}
+
+td{
+    color:#fffffe;
+
+}
+
+label{
+    color:#fffffe;
+
+}
+
+table{
+    color:#fffffe;
+
+}
+
+.piecontacto {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    height: 130px;
+    bottom: 0;
+    position: absolute;
+    grid-row: 3/4;
+
+}
+
+.piecontacto__div {
+    display:inline;
+    flex-direction:column;
+    margin:25px;
+}
