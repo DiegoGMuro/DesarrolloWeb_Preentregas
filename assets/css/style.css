@@ -11,7 +11,7 @@ nav {
 
 
 .navBackground {
-	background-color: rgb(36, 173, 241);
+	background-color: rgb(13, 120, 173);
 	position: sticky;
 	top: 0px;
 }
@@ -55,7 +55,7 @@ nav ul li{
 
 
 nav ul li a{
-    color:#000707;
+    color:#dad74e;
     font-size: 20px;
     font-style: normal;
     
@@ -65,7 +65,7 @@ nav ul li a{
 
 /* Secciones secundarias */
 section{
-    background-color: #0b3502b6;
+    background-color: #23910ab6;
 }
 
 
@@ -93,7 +93,7 @@ section{
 /* Pie de pagina */
 
 footer{
-    background-color: crimson;
+    background-color: rgb(124, 3, 28);
 }
 
 
@@ -151,22 +151,31 @@ ul ul {
 }
 
 h2{
-    color:#fffffe;
+    color:#077929;
+
+}
+
+h3{
+    color:#1707aa;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
 
 }
 
 th{
-    color:#fffffe;
+    color:#1707aa;
 
 }
 
 td{
-    color:#fffffe;
+    color:#292902;
 
 }
 
 label{
-    color:#fffffe;
+    color:#292902;
 
 }
 
