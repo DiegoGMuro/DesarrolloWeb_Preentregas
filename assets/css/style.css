@@ -3,159 +3,13 @@
 body{background-color: rgba(128, 128, 128, 0.11);
 }
 
-nav {
-	position: relative;
-	bottom: 70px;
-	left: 500px;
-}
-
-
-.navBackground {
-	background-color: rgb(13, 120, 173);
-	position: sticky;
-	top: 0px;
-}
-.navBackground img {
-	padding: 05px;
-}
-
 /* Etiquetas textos */
 h1{
-    color:#fffffe;
-    font-size: 50px;
-    font-weight:200;
+    color:lightcoral;
+    font-size: 40px;
+    font-weight:300;
     font-family: 'Lobster', cursive;
 
-}
-
-
-p{
-    color:#020e0a;
-    font-size: 16px;
-    font-weight:normal;
-    font-style: italic;
-    font-family: cursive;
-}
-
-/* Cabecera */
-header{
-    background-color: #1da59e;
-}
-
-/* Menu */
-nav ul{
-    font-size:30px;
-}
-
-/* Herencia */
-nav ul li{
-    color:#010511ce;
-    font-weight: bold;
-}
-
-
-nav ul li a{
-    color:#dad74e;
-    font-size: 20px;
-    font-style: normal;
-
-}
-
-nav ul li ul{
-    font-size: 3px;
-    font-style: italic;
-    font-weight: bold;
-    line-height: 1.2;
-    color: greenyellow;
-
-}
-
-
-/* Secciones secundarias */
-section{
-    background-color: #23910ab6;
-}
-
-
-.foto{
-    width: 100%;  
-}
-  
-
-.texto-rojo{
-      color:red;
-      background-color: yellow;
-}
-
-
-#cualquiera{
-    background-color: #004643;
-}
-
-
-#video{
-    background-color: #abd1c6;
-}
-
-
-/* Pie de pagina */
-
-footer{
-    background-color: rgb(124, 3, 28);
-}
-
-
-footer p{
-   color:white; 
-}
-
-
-li{
-    display: inline-block;
-    padding-left: 0.5px;
-    padding-right: 0.5px;
- 
-   
-}
-
-
-ul ul {
-    position: relative;
-    display: none;
- }
- ul ul li {
-    display: block;
-    width:200px;
-    padding: 5px;
- }
- ul ul li a {
-    color: greenyellow;
-    font-size: medium;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: normal;
-    text-decoration: none;
-}
- ul li:hover ul {
-    position: absolute;
-    display:block;
-    background-color: rgb(25, 25, 26);
- }
- .parametroPosition{width: 80%; height: 80%;}
-
-.cuadradoAzul{
-	width: 500px;
-	height: 500px;
-	background-color: darkblue;
-	position: relative;
-
-}
-
-.cuadradoRojo{
-	width: 1000px;
-	height: 500px;
-	background-color: red;
-	position: relative;
-	
 }
 
 h2{
@@ -179,6 +33,150 @@ th{
 
 td{
     color:#292902;
+    background-color: lemonchiffon;
+
+}
+
+p{
+    color:#020e0a;
+    font-size: 16px;
+    font-weight:normal;
+    font-style: italic;
+    font-family: cursive;
+}
+
+
+/* Separador */
+.my-4 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+
+
+/* Cabecera */
+header{
+    background-color: #b61429;
+}
+
+/* Menu */
+/* Herencia */
+
+.navBackground {
+	background-color: lightseagreen;
+	position: sticky;
+	top: 0px;
+}
+
+.navBackground img {
+	padding: 0.2px;
+}
+
+
+nav {
+	position: relative;
+	bottom: 70px;
+	left: 500px;
+}
+
+
+nav ul{
+    font-size:30px;
+}
+
+
+nav ul li{
+    color:#010511ce;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+}
+
+
+nav ul li a{
+    color:yellow;
+    font-size: 20px;
+    font-style: normal;
+
+}
+
+
+nav ul ul{
+    position: absolute;
+    display: none;
+}
+
+nav ul ul li{
+    display: block;
+    width:200px;
+    padding: 5px;
+
+}
+
+nav ul ul li a {
+    color: lightskyblue;
+    font-size: small;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+
+
+/* Uso de Hover */
+nav ul li:hover ul{
+    display: block;
+    background-color: darkblue;
+}
+
+
+nav ul li:hover ul li a{
+    display: block;
+    background-color: darkblue;
+    
+}
+nav ul li a:hover{
+    color:orangered;
+    
+}
+
+
+/* Secciones secundarias */
+section{
+    background-color: lightgoldenrodyellow;
+    height: 60px;
+}
+
+
+/* CLASS */
+.foto{
+    width: 100%;
+     
+}
+  
+.texto-azul{
+      color:blue;
+      background-color: lemonchiffon;
+}
+
+.texto-remarcado{
+    color: darkslategray;
+    background-color: lemonchiffon;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+
+/* ID */
+#video{
+    background-color: #abd1c6;
+}
+
+
+/* Table - Label */
+table{
+    color:#fffffe;
 
 }
 
@@ -187,11 +185,51 @@ label{
 
 }
 
-table{
-    color:#fffffe;
 
+/* Pie de pagina */
+footer{
+    background-color: rgb(60, 7, 184);
 }
 
+
+footer p{
+   color:white; 
+}
+
+
+
+
+
+
+
+/*#cualquiera{
+    background-color: #004643;
+}*/
+
+
+/*
+ul ul {
+    position: relative;
+    display: none;
+ }*/
+
+/*
+ ul ul li {
+    display: block;
+    width:200px;
+    padding: 5px;
+ }*/
+
+
+/*
+ ul li:hover ul {
+    position: absolute;
+    display:block;
+    background-color: rgb(25, 25, 26);
+ }*/
+
+
+/*
 .piecontacto {
     align-items: center;
     display: flex;
@@ -210,9 +248,45 @@ table{
     display:inline;
     flex-direction:column;
     margin:25px;
+}*/
+
+/* 
+.cuadradoAzul{
+	width: 500px;
+	height: 500px;
+	background-color: darkblue;
+	position: relative;
+
 }
 
-.my-4 {
-    margin-top: 1.5rem !important;
-    margin-bottom: 1.5rem !important;
-  }
+.cuadradoRojo{
+	width: 1000px;
+	height: 500px;
+	background-color: red;
+	position: relative;
+	
+}*/
+
+
+/* 
+ .parametroPosition{width: 80%; height: 80%;}
+*/
+
+/*
+li{
+    display: inline-block;
+    padding-left: 0.5px;
+    padding-right: 0.5px;
+  
+}*/
+
+
+/*
+nav ul li ul{
+    font-size: 3px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.2;
+    color: greenyellow;
+
+} */
