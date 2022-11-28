@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-body{background-color: rgba(128, 128, 128, 0.11);
+main{background-color: grey);
 }
 
 /* Etiquetas textos */
@@ -195,6 +195,10 @@ section{
     background-color: #abd1c6;
 }
 
+#paises-bajos{
+    
+
+}
 
 /* Table - Label */
 table{
