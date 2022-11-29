@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 
-main{background-color: grey);
-}
 
 /* Etiquetas textos */
 h1{
@@ -17,7 +16,6 @@ h2{
     font-size: 40px;
     font-weight:300;
     font-family: 'Lobster', cursive;
-
 
 }
 
@@ -62,7 +60,6 @@ p{
 }
 
 
-
 /* Cabecera */
 header{
     background-color: #b61429;
@@ -70,18 +67,6 @@ header{
 
 /* Menu */
 /* Herencia */
-
-.navBackground {
-	background-color: lightseagreen;
-	position: sticky;
-	top: 0px;
-}
-
-.navBackground img {
-	padding: 0.2px;
-}
-
-
 nav {
 	position: relative;
 	bottom: 70px;
@@ -135,13 +120,13 @@ nav ul ul li a {
 /* Uso de Hover */
 nav ul li:hover ul{
     display: block;
-    background-color: darkblue;
+    background-color: darkslategrey;
 }
 
 
 nav ul li:hover ul li a{
     display: block;
-    background-color: darkblue;
+    background-color: darkslategrey;
     
 }
 nav ul li a:hover{
@@ -158,14 +143,26 @@ img:hover{
 
 /* Secciones secundarias */
 section{
-    background-color: lightgoldenrodyellow;
+    background-color: lightgray;
     height: 60px;
 }
 
 
 /* CLASS */
-.foto{
-    width: 100%;
+.navBackground {
+	background-color: lightseagreen;
+	position: sticky;
+    height: 160px;;
+    top: 0px;
+}
+
+.logo{
+    width: 140px;
+    
+}
+
+.foto-pais{
+    width: 350px;
      
 }
   
@@ -173,6 +170,13 @@ section{
       color:blue;
       background-color: lemonchiffon;
 }
+
+.texto-login{
+    color:blue;
+    font-family: cursive;
+    font-weight: bold;
+}
+
 
 .texto-remarcado{
     color: darkslategray;
@@ -195,10 +199,6 @@ section{
     background-color: #abd1c6;
 }
 
-#paises-bajos{
-    
-
-}
 
 /* Table - Label */
 table{
@@ -236,92 +236,3 @@ footer p{
 
 
 
-
-/*#cualquiera{
-    background-color: #004643;
-}*/
-
-
-/*
-ul ul {
-    position: relative;
-    display: none;
- }*/
-
-/*
- ul ul li {
-    display: block;
-    width:200px;
-    padding: 5px;
- }*/
-
-
-/*
- ul li:hover ul {
-    position: absolute;
-    display:block;
-    background-color: rgb(25, 25, 26);
- }*/
-
-
-/*
-.piecontacto {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: #000000;
-    color: #ffffff;
-    height: 130px;
-    bottom: 0;
-    position: absolute;
-    grid-row: 3/4;
-
-}
-
-.piecontacto__div {
-    display:inline;
-    flex-direction:column;
-    margin:25px;
-}*/
-
-/* 
-.cuadradoAzul{
-	width: 500px;
-	height: 500px;
-	background-color: darkblue;
-	position: relative;
-
-}
-
-.cuadradoRojo{
-	width: 1000px;
-	height: 500px;
-	background-color: red;
-	position: relative;
-	
-}*/
-
-
-/* 
- .parametroPosition{width: 80%; height: 80%;}
-*/
-
-/*
-li{
-    display: inline-block;
-    padding-left: 0.5px;
-    padding-right: 0.5px;
-  
-}*/
-
-
-/*
-nav ul li ul{
-    font-size: 3px;
-    font-style: italic;
-    font-weight: bold;
-    line-height: 1.2;
-    color: greenyellow;
-
-} */
