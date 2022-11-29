@@ -161,24 +161,30 @@ section{
     
 }
 
-.foto-pais{
+.fotoPais{
     width: 350px;
      
 }
   
-.texto-azul{
+.textoAzul{
       color:blue;
       background-color: lemonchiffon;
 }
 
-.texto-login{
+.textoLogin{
     color:blue;
     font-family: cursive;
     font-weight: bold;
 }
 
+.textoContrasena{
+    color:darkslategray;
+    font-weight: bold;
+}
 
-.texto-remarcado{
+
+
+.textoRemarcado{
     color: darkslategray;
     background-color: lemonchiffon;
     font-weight: bold;
@@ -186,7 +192,7 @@ section{
 
 }
 
-.texto-paises{
+.textoPaises{
     color: darkblue;
     background-color: lightgrey;
     font-weight: bold;
@@ -216,6 +222,7 @@ label{
 footer{
     background-color: lightskyblue;
     font-weight: bold;
+    margin-bottom: 5px;  
 }
 
 
@@ -225,6 +232,12 @@ footer p{
    font-weight: bold; 
 }
 
+footer a{
+    margin: 10px;
+    display: inline;
+
+
+}
 
 .links{
     color:#1707aa;

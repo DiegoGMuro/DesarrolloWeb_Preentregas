@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">      
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">          
 </head>
 <body>
     
@@ -18,12 +21,12 @@
         <h1>Eurotrip</h1>
         <nav>
             <ul>
-                <li><a href="../index.html" target="blank" >| Home |</a></li>
+                <li><a href="../index.html">| Home |</a></li>
                 <ul>
                     <li><a href="#inforelevante">Informacion relevante</a></li>
                     <li><a href="#Mapa">Mapa de Europa</a></li>                        
                 </ul>                
-                <li><a href="countries.html" target="blank" >Paises |</a>
+                <li><a href="countries.html">Paises |</a>
                     <ul>
                         <li><a href="#paisesbajos">Paises Bajos</a></li>
                         <li><a href="#grecia">Grecia</a></li>
@@ -37,7 +40,7 @@
                         <li><a href="#hungria">Hungria</a></li>
                     </ul>
                 </li>
-                <li><a href="cities.html" target="blank" >Ciudades |</a>
+                <li><a href="cities.html">Ciudades |</a>
                     <ul>
                         <li><a href="#amsterdam">Amsterdam</a></li>
                         <li><a href="#rotterdam">Rotterdam</a></li>
@@ -62,9 +65,9 @@
                     </ul>
                 </li>         
     
-                <li><a href="about.html" target="blank" >Sobre nosotros |</a></li>
-                <li><a href="contact.html" target="blank" >Contacto |</a></li>
-                <li><a href="login.html" target="blank" >Login |</a></li>
+                <li><a href="about.html">Sobre nosotros |</a></li>
+                <li><a href="contact.html">Contacto |</a></li>
+                <li><a href="login.html">Login |</a></li>
             </ul>
         </nav>
         </header>  
@@ -77,21 +80,23 @@
         
         <br/>
         <form>
-            <input type="text" placeholder="Usuario">
+            <label for="Usuario">Usuario</label>
+            <input id="Usuario" type="text" placeholder="Completar usuario">
             <br/>
-            <input type="text" placeholder="Contraseña">
+            <label for="Contraseña">Contraseña</label>
+            <input id="Contraseña" type="text" placeholder="Completar contraseña">
             <br/>
             <input type="submit" value="Iniciar sesion">            
         </form> 
-        <br/>
+        
         
         <form>
-        <input type="submit" value="Mantener la sesion iniciada"> 
+            <p class="textoContrasena"> Mantener la sesion iniciada</p> 
         </form>
         
         <br/>
-                <p class="texto-login"> Olvido su contraseña</p>            
-                <p class="texto-login"> Crear una cuenta</p>              
+            <p class="textoLogin"> Olvido su contraseña</p>            
+            <p class="textoLogin"> Crear una cuenta</p>              
         <br/>
         
         <footer>
