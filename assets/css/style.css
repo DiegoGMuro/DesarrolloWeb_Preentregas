@@ -52,6 +52,20 @@ p{
     font-family: cursive;
 }
 
+/* Centrado */
+table{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+tr{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section h2{
+    text-align: center;
+}
 
 /* Separador */
 .my-4 {
@@ -206,14 +220,9 @@ section{
 }
 
 
-/* Table - Label */
-table{
-    color:#fffffe;
-
-}
-
 label{
     color:#292902;
+    font-weight: bold;
 
 }
 
@@ -235,7 +244,6 @@ footer p{
 footer a{
     margin: 10px;
     display: inline;
-
 
 }
 
