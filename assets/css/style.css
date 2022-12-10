@@ -77,6 +77,7 @@ section h2{
     text-align: center;
 }
 
+
 /* Separador */
 .my-4 {
     margin-top: 1.5rem !important;
@@ -208,12 +209,9 @@ section{
     color:darkslategray;
     font-family: cursive;
     font-weight: bold;
+    
 }
 
-.textoContrasena{
-    color:darkslategray;
-    font-weight: bold;
-}
 
 
 
@@ -281,6 +279,7 @@ footer a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: bisque;
     }
 
 /* Leer mas ..*/
@@ -356,5 +355,19 @@ form textarea{
     font-size: 14px;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+form p{
+    text-align: center;
+}
+
+form p:hover{
+    color: blue;
+
+}
+
+form label:hover{
+    color: red;
 
 }
