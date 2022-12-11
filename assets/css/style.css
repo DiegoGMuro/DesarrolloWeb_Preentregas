@@ -10,14 +10,16 @@ body{
 
 /* Etiquetas textos */
 h1{
-    color:whitesmoke;
-    font-size: 40px;
+    color:blue;
+    font-size: 45px;
     font-weight:300;
     font-family: 'Lobster', cursive;
     display: flex;
     flex-direction: column;
     justify-content: top;
-    align-items: center;
+    align-items: left;
+    margin-left: 30px;
+    
 
 }
 
@@ -85,29 +87,23 @@ section h2{
 }
 
 
-/* Cabecera */
-header{
-    background-color: #b61429;
-}
-
 /* Menu */
 /* Herencia */
-
-
 nav {
 	position: relative;
-	bottom: 70px;
-    text-align: center;
+	bottom: 40px;
+    text-align: bottom;
 	
 }
 
 
 nav ul{
-    font-size:25px;
+    font-size:20px;
     display: flex;
     flex-direction: row;
     justify-content: right;
-    align-items: right;
+    align-items: center;
+    margin-right: 15px;
 
 }
 
@@ -117,13 +113,16 @@ nav ul li{
     font-weight: bold;
     display: inline-block;
     position: relative;
+
+
 }
 
 
 nav ul li a{
-    color:yellow;
-    font-size: 18px;
+    color:cyan;
+    font-size: 20px;
     font-style: normal;
+    margin-bottom: 7px;
 
 }
 
@@ -136,13 +135,13 @@ nav ul ul{
 nav ul ul li{
     display: block;
     width:200px;
-    padding: 5px;
+    padding: 0px;
 
 }
 
 nav ul ul li a {
     color: lightskyblue;
-    font-size: small;
+    font-size: 15px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: normal;
     text-decoration: none;
@@ -154,23 +153,26 @@ nav ul ul li a {
 /* Uso de Hover */
 nav ul li:hover ul{
     display: block;
-    background-color: darkslategrey;
+    background-color: grey;
 }
 
 
 nav ul li:hover ul li a{
     display: block;
-    background-color: darkslategrey;
+    background-color: grey;
     
 }
+
 nav ul li a:hover{
-    color:whitesmoke;
+    color:yellow;
+    font-weight: bold;
     background-color:black;
     
 }
 
+
 img:hover{
-    background-color: greenyellow;
+    background-color: yellow;
 }
 
 
@@ -183,16 +185,38 @@ section{
 
 
 /* CLASS */
+/* Cabecera */
+header{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	/*align-content: stretch;*/
+}
+
 .navBackground {
-	background-color: lightseagreen;
+	background-color: lightcoral;
 	position: sticky;
-    height: 150px;
+    height: 180px;
     top: 0px;
 }
 
 .logo{
-    width: 140px;
+    width: 120px;
+    height: 50px;
+    border: solid 2px darkslategrey;
+    margin-left: 30px;
+    margin-top: 60px;
+    /*display: flex;
+    /*flex-direction: row;
+    /*
+    align-items: center;*/
     
+}
+
+.bordes{
+    border: outset 5px lightseagreen;
 }
 
 .fotoPais{
@@ -225,7 +249,7 @@ section{
 
 .textoPaises{
     color: darkblue;
-    background-color: lightgrey;
+    background-color: none;
     font-weight: bold;
     text-align: left;
 
@@ -262,6 +286,7 @@ footer a{
     margin: 10px;
     display: inline;
 
+
 }
 
 .links{
@@ -275,12 +300,24 @@ footer a{
 
 .container {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: flex;   /* inicio de flexbox*/
+    flex-direction: column; /* vertical u hotizontal*/
+    justify-content: center; /* alinerar vertical u hotizontal*/
     align-items: center;
     background-color: bisque;
     }
+
+.container--footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+
+
 
 /* Leer mas ..*/
 .readMore_btn {
@@ -309,7 +346,7 @@ footer a{
     display: block;
     }
 
-/* Etiquetas interactivas*/
+/* Etiquetas interactivas -Ocultar texto-*/
 details{
     color:#020e0a;
     font-size: 14px;
