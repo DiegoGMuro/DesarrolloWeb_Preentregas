@@ -275,9 +275,10 @@ label{
 
 /* Pie de pagina */
 footer{
-    background-color: lightskyblue;
+    background-color: lightblue;
     font-weight: bold;
-    margin-bottom: 5px;  
+    margin-bottom: 5px; 
+    
 }
 
 
