@@ -451,6 +451,9 @@ form label:hover{
     position: relative; /* HACE QUE SE SUPERPPONGA*/
     width: 100%;
     height: 100%;
+    background-color:bisque; /*  */
+    display: flex;             /*  */
+    justify-content: center;   /*  */
     
 }
 
@@ -464,9 +467,7 @@ img{
     width: auto;
     height: auto;
 
-
 }
-
 
 .itemCarrouselArrows{
     position: absolute;
@@ -487,7 +488,7 @@ img{
     
 }
 
-#itemCarrousel-1{
+/*#itemCarrousel-1{
     background-color:bisque;
     display: flex;
     justify-content: center;
@@ -503,7 +504,7 @@ img{
     background-color: bisque;
     display: flex;
     justify-content: center;
-}
+}*/
 
 .conteCarrouselController{
     width: 100%;
