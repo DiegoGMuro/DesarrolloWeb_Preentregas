@@ -690,6 +690,9 @@ img{
         display: flex;
         flex-direction: column;
         align-content: center;
+        margin-top: 0%;
+        padding-left: 3%;
+        padding-right: 3%;
 
     }
 }
@@ -700,6 +703,9 @@ img{
         display: flex;
         flex-direction: column;
         align-content: center;
+        margin-top: 0%;
+        padding-left: 3%;
+        padding-right: 3%;
 
     }
 }
@@ -716,7 +722,7 @@ img{
     }
 }
 
-@media only screen and (min-width: 1280px){
+/*@media only screen and (min-width: 1280px){
     .grid_city{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -725,7 +731,7 @@ img{
         grid-row-gap: 3px;
         
     }
-}
+}*/
 
 @media only screen and (max-width: 1280px){
     .container_city{
