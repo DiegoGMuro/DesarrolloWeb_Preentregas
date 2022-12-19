@@ -111,8 +111,27 @@ nav ul li{
     display: inline-block;
     position: relative;
 
-
 }
+
+/*nuevo 18/12*/
+
+/*@media (max-width: 600px){
+    nav ul{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+}*/
+
+@media only screen and (max-width: 600px){
+    nav ul{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
 
 
 nav ul li a{
@@ -159,6 +178,27 @@ nav ul li:hover ul li a{
     background-color: grey;
     
 }
+
+/*nuevo 18/12*/
+
+/*@media (max-width: 700px){
+    nav ul li:hover ul li a{
+        display: flex;
+        flex-direction: column;
+        background-color: grey;
+        
+    }
+}*/
+
+@media only screen and (min-width: 700px){
+    nav ul li:hover ul li a{
+        display: flex;
+        flex-direction: column;
+        background-color: grey;
+        
+    }
+}
+
 
 nav ul li a:hover{
     color:yellow;
@@ -208,9 +248,6 @@ header{
     
 }
 
-.bordes{
-    border: outset 5px lightseagreen;
-}
 
 .fotoPais{
     width: 370px;
@@ -326,7 +363,16 @@ footer a{
     justify-content: center; /* alinerar vertical u hotizontal*/
     align-items: center;
     background: linear-gradient(to right, bisque, lightsalmon);
-    
+
+}
+
+.container_city {
+    width: 100%;
+    display: flex;   /* inicio de flexbox*/
+    flex-direction: row; /* vertical u hotizontal*/
+    justify-content: space-evenly; /* alinerar vertical u hotizontal*/
+    align-items: center;
+    background: linear-gradient(to right, bisque, lightsalmon);
 
 }
 
@@ -337,12 +383,7 @@ footer a{
     grid-template-rows: 100vh;
     grid-template-areas:
 
-
-    
-
 }*/
-
-
 
 
 .container--footer {
@@ -449,7 +490,25 @@ form label:hover{
 
 
 
-/*CARROUSEL DE IMAGENES*/
+/*CARROUSEL DE IMAGENES 1*/
+
+.imagen__ciudades{
+    width: 60vh;  /* para responsive poner en VH* antes 600px*/
+    height: 45vh;  /* para responsive poner en VH* antes 450px*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*margin-left: 26.8%;*/   /**/
+    margin-left: 36%;
+    border-radius: 7px;
+    
+
+}
+
+
+
+/*CARROUSEL DE IMAGENES 2*/
 
 *{
     /*margin: 0;
@@ -618,10 +677,68 @@ img{
 
 @keyframes movimiento {
 	0%{left: 0px;}
-	50%{left: 700px; background-color: darkgray;}
-	100%{left:1500px; background-color: yellow;}
+	20%{left: 500px; background-color: darkgray;}
+	40%{left:700px; background-color: yellow;}
+    70%{left:1000px; background-color: orange;}
 }
 
 
+/* MEDIA QUERIES*/
+
+@media only screen and (max-width: 1280px){
+    #login{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+    }
+}
 
 
+@media only screen and (max-width: 1280px){
+    #contacto{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+    }
+}
+
+
+@media only screen and (max-width: 1280px){
+    #nosotros{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-top: 0%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+@media only screen and (min-width: 1280px){
+    .grid_city{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 4px;
+        grid-row-gap: 3px;
+        
+    }
+}
+
+@media only screen and (max-width: 1280px){
+    .container_city{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       /* grid-template-rows: 1fr;*/
+        /*grid-column-gap: 4px;
+        grid-row-gap: 3px;*/
+        gap: 10px;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        
+                
+    }
+}
