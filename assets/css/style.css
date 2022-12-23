@@ -31,6 +31,7 @@ h2{
     font-family: 'Lobster', cursive;
     text-align: center;
     background-color: bisque;*/
+    color: darkblue;
     background: linear-gradient(to right, bisque, lightsalmon);
     
 }
@@ -50,6 +51,7 @@ th{
 td{
     color:#292902;
     background-color: lemonchiffon;
+    font-size: 13px;
 
 }
 
@@ -59,14 +61,19 @@ p{
     font-weight:normal;
     font-style: italic;
     font-family: cursive;
-    width: 190vh;
+    width: 85%;
     /*height: 45vh;*/
+
 }
 
 /* Centrado */
 table{
     margin-right: auto;
     margin-left: auto;
+    overflow-x: auto ;
+
+    
+    
 }
 
 tr{
@@ -138,7 +145,7 @@ nav ul li{
 
 nav ul li a{
     color:rgb(60, 153, 196);
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     margin-bottom: 7px;
 
@@ -262,7 +269,7 @@ header{
 }*/
 
 .textoAzul{
-    color:blue;
+    color:darkblue;
     background-color: lemonchiffon;
 }
 
@@ -286,7 +293,8 @@ header{
     color: darkslategray;
     background-color: lemonchiffon;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
+    font-size: 15px;
 
 }
 
@@ -316,7 +324,7 @@ header{
 
 @media only screen and (min-width: 600px){
     table{
-    width: 60vh;
+    width: 70vh;
     height: 45vh;
 }
 }
@@ -380,7 +388,8 @@ footer a{
 .links{
     color:#1707aa;
     text-align: center;
-    font-weight: bold; 
+    font-weight: bold;
+    font-size: 15px; 
 
 }
 
@@ -394,9 +403,39 @@ footer a{
     align-items: center;
     background: linear-gradient(to right, bisque, lightsalmon);
     text-align: left;
-    
+        
 
 }
+
+.coloreado{
+    width: 100%;
+    display: flex;   
+    flex-direction: column; 
+    justify-content: center; 
+    background: linear-gradient(to right, bisque, lightsalmon);
+
+}
+
+.botonMov {
+    background: linear-gradient(to right, rgb(23, 120, 165), rgb(6, 6, 146));
+	border-radius:20px;
+	display:block;
+    position: relative;
+    width: 200px;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#c5c215;
+    text-align: center;
+    font-weight:bold;
+	font-size:20px;
+	padding:16px 31px;
+	text-decoration:none;
+    margin: 0px auto;
+	animation: resaltado 3s infinite;
+
+}
+
 
 
 .container_city {
@@ -812,4 +851,53 @@ img{
         
                 
     }
+}
+
+
+/* NUEVO 22/12*/
+
+.form-control{
+    width: 70%;
+}
+
+.mb-3{
+    margin-left: 30%;
+
+
+}
+
+
+.btn{
+    margin-left: 30%;
+
+}
+
+.form-label{
+    font-weight: bold;
+    color: darkblue;
+}
+
+.form-label1{
+    color:darkslategray;
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: bold;
+        
+}
+
+.form-label1:hover{
+    color: green;
+
+}
+
+
+.slide{
+    width: 50vh;
+    size: 10px;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
