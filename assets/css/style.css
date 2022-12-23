@@ -25,13 +25,15 @@ h1{
 }
 
 h2{
-    color:#077929;
+   /* color:#077929;
     font-size: 35px;
     font-weight:300;
     font-family: 'Lobster', cursive;
     text-align: center;
-    background-color: bisque;
-
+    background-color: bisque;*/
+    color: darkblue;
+    background: linear-gradient(to right, bisque, lightsalmon);
+    
 }
 
 
@@ -49,6 +51,7 @@ th{
 td{
     color:#292902;
     background-color: lemonchiffon;
+    font-size: 13px;
 
 }
 
@@ -58,12 +61,19 @@ p{
     font-weight:normal;
     font-style: italic;
     font-family: cursive;
+    width: 85%;
+    /*height: 45vh;*/
+
 }
 
 /* Centrado */
 table{
     margin-right: auto;
     margin-left: auto;
+    overflow-x: auto ;
+
+    
+    
 }
 
 tr{
@@ -110,13 +120,32 @@ nav ul li{
     display: inline-block;
     position: relative;
 
+}
 
+/*nuevo 18/12*/
+
+/*@media (max-width: 600px){
+    nav ul{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+}*/
+
+@media only screen and (max-width: 600px){
+    nav ul{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
+
+
 nav ul li a{
-    color:darkblue;
-    font-size: 18px;
+    color:rgb(60, 153, 196);
+    font-size: 16px;
     font-style: normal;
     margin-bottom: 7px;
 
@@ -159,6 +188,27 @@ nav ul li:hover ul li a{
     
 }
 
+/*nuevo 18/12*/
+
+/*@media (max-width: 700px){
+    nav ul li:hover ul li a{
+        display: flex;
+        flex-direction: column;
+        background-color: grey;
+        
+    }
+}*/
+
+@media only screen and (min-width: 700px){
+    nav ul li:hover ul li a{
+        display: flex;
+        flex-direction: column;
+        background-color: grey;
+        
+    }
+}
+
+
 nav ul li a:hover{
     color:yellow;
     font-weight: bold;
@@ -176,7 +226,8 @@ img:hover{
 /* CLASS */
 /* Cabecera */
 header{
-    background-color: darkgray;
+    /*background-color: darkgray;*/
+    background: linear-gradient(to right, rgb(146, 145, 144), rgb(66, 65, 65));
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -203,26 +254,22 @@ header{
     border: solid 2px darkslategrey;
     margin-left: 30px;
     margin-top: 110px;
-
     
 }
 
-.bordes{
-    border: outset 5px lightseagreen;
-}
 
-.fotoPais{
-    width: 370px;
-    
-}
+/*.fotoPais{
+    width: 45vh;  /*antes 370px*/
+   /* height: 40vh;
+}*/
 
-.fotociudad{
+/*.fotociudad{
     width: 500px;
     
-}
+}*/
 
 .textoAzul{
-    color:blue;
+    color:darkblue;
     background-color: lemonchiffon;
 }
 
@@ -233,43 +280,79 @@ header{
     
 }
 
+.textoLogin_bis{
+    color:brown;
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: bold;
+    text-align: center;
+    
+}
 
 .textoRemarcado{
     color: darkslategray;
     background-color: lemonchiffon;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
+    font-size: 15px;
 
 }
 
 .textoPaises{
-    color: black;
+    color: darkblue;
     font-size: 25px;
     font-style: italic;
     font-weight: bold;
     text-decoration: underline;
-    text-align: left;
+    text-align: center;
     background-color: none
 
+}
+
+/* Videos y Maps */
+.video__maps{
+    width: 45vh;
+    height: 30vh;
+}
+
+@media only screen and (min-width: 600px){
+    .video__maps{
+    width: 60vh;
+    height: 45vh;
+}
+}
+
+@media only screen and (min-width: 600px){
+    table{
+    width: 70vh;
+    height: 45vh;
+}
 }
 
 
 h3{
-    color:black;
+    color:darkblue;
     font-size: 25px;
     font-style: italic;
     font-weight: bold;
     text-decoration: underline;
-    text-align: left;
-    background-color: none
-    
+    text-align: center;
+    background-color: none;
+
+
 }
+
+/*.focoPaises{
+    background-color: none;
+}*/
+
+
 
 
 /* ID */
-#video{
+/*#video{
     background-color: #abd1c6;
-}
+}*/
 
 
 label{
@@ -281,7 +364,8 @@ label{
 
 /* Pie de pagina */
 footer{
-    background-color: lightblue;
+    /*background-color: lightblue;*/
+    background: linear-gradient(to right, rgb(148, 195, 223), rgb(46, 117, 175));
     font-weight: bold;
     margin-bottom: 5px; 
     
@@ -304,7 +388,8 @@ footer a{
 .links{
     color:#1707aa;
     text-align: center;
-    font-weight: bold; 
+    font-weight: bold;
+    font-size: 15px; 
 
 }
 
@@ -316,18 +401,82 @@ footer a{
     flex-direction: column; /* vertical u hotizontal*/
     justify-content: center; /* alinerar vertical u hotizontal*/
     align-items: center;
-    background-color: bisque;
-    }
+    background: linear-gradient(to right, bisque, lightsalmon);
+    text-align: left;
+        
+
+}
+
+.coloreado{
+    width: 100%;
+    display: flex;   
+    flex-direction: column; 
+    justify-content: center; 
+    background: linear-gradient(to right, bisque, lightsalmon);
+
+}
+
+.botonMov {
+    background: linear-gradient(to right, rgb(23, 120, 165), rgb(6, 6, 146));
+	border-radius:20px;
+	display:block;
+    position: relative;
+    width: 200px;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#c5c215;
+    text-align: center;
+    font-weight:bold;
+	font-size:20px;
+	padding:16px 31px;
+	text-decoration:none;
+    margin: 0px auto;
+	animation: resaltado 3s infinite;
+
+}
+
+
+
+.container_city {
+    width: 100%;
+    display: flex;   /* inicio de flexbox*/
+    flex-direction: row; /* vertical u hotizontal*/
+    justify-content: space-evenly; /* alinerar vertical u hotizontal*/
+    align-items: center;
+    background: linear-gradient(to right, bisque, lightsalmon);
+
+}
+
+.container_country {
+    width: 100%;
+    display: flex;   /* inicio de flexbox*/
+    flex-direction: row; /* vertical u hotizontal*/
+    justify-content: space-evenly; /* alinerar vertical u hotizontal*/
+    align-items: center;
+    background: linear-gradient(to right, bisque, lightsalmon);
+
+}
+
+/*.container {
+    background: linear-gradient(to right, white, bisque)
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100vh;
+    grid-template-areas:
+
+}*/
+
 
 .container--footer {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: center;  /*flex start*/
 
-    }
-    
+}
+
 
 /* Leer mas ..*/
 .readMore_btn {
@@ -339,7 +488,8 @@ footer a{
     font-size: 12px;
     box-shadow: 0px 0px 10px 0px #4caf50;
     cursor: pointer;
-    }
+}
+
 
 .readMore_btn:hover {
     box-shadow: none;
@@ -371,7 +521,7 @@ summary{
     font-size: 15px;
     font-weight: bolder;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: lightgoldenrodyellow;
+    background: linear-gradient(to right, bisque, lightsalmon);
     
 }
 
@@ -389,7 +539,7 @@ form input{
     font-size: 14px;
     font-weight: normal;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 80%;
+    width: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -409,8 +559,8 @@ form p{
     text-align: center;
 }
 
-form p:hover{
-    color: blue;
+form h5:hover{
+    color: green;
 
 }
 
@@ -422,11 +572,27 @@ form label:hover{
 
 
 
-/*CARROUSEL DE IMAGENES*/
+/*CARROUSEL DE IMAGENES 1*/
 
-*{
-    /*margin: 0;
-    padding: 0;*/
+.imagen__ciudades{
+    width: 45vh;  /* para responsive poner en VH* antes 600px*/
+    height: 30vh;  /* para responsive poner en VH* antes 450px*/
+    border-radius: 7px;
+}
+@media only screen and (min-width: 1280px){
+    .imagen__ciudades{
+        width: 60vh;  /* para responsive poner en VH* antes 600px*/
+        height: 45vh;  /* para responsive poner en VH* antes 450px*/
+        margin-left: 34%;
+        border-radius: 7px;
+}
+}
+
+/*CARROUSEL DE IMAGENES 2*/
+
+/* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
         
 }
@@ -448,28 +614,29 @@ form label:hover{
 }
 
 .itemCarrousel{
-    position: relative; /* HACE QUE SE SUPERPPONGA*/
+    position: relative; 
     width: 100%;
     height: 100%;
-    background-color:bisque; /*  */
-    display: flex;             /*  */
-    justify-content: center;   /*  */
+    background: linear-gradient(to right, bisque, lightsalmon);
+
+    display: flex;             
+    justify-content: center;   
     
-}
+} */
 
 
 /*.itemCarrouselTarjeta{
     width: 100%;
     height: 100%;
 }*/
-
+/* 
 img{
     width: auto;
     height: auto;
 
-}
+} */
 
-.itemCarrouselArrows{
+/* .itemCarrouselArrows{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -486,7 +653,7 @@ img{
 .itemCarrouselArrows > i:hover {
     cursor: pointer;
     
-}
+} */
 
 /*#itemCarrousel-1{
     background-color:bisque;
@@ -506,7 +673,7 @@ img{
     justify-content: center;
 }*/
 
-.conteCarrouselController{
+/* .conteCarrouselController{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -522,4 +689,215 @@ img{
     color: blue;
     font-weight: bold;
     
+} */
+
+
+/*ANIMACIONES*/
+/*TITULOS*/
+
+.logoMov {
+	display:block;
+    position: relative;
+	cursor:pointer;
+	animation: resaltado 3s infinite;
+
+
+}
+
+.logoMov:focus {
+    width: 50px;
+    font-size: 80px;
+    color: brown;
+    
+
+}
+
+
+.titulosMov {
+    background: linear-gradient(to right, lightblue, rgb(115, 115, 206));
+	/*background-color:bisque;*/
+	border-radius:20px;
+	display:block;
+    position: relative;
+    width: 300px;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:'Lobster', cursive;
+    color:#020e0a;
+    text-align: center;
+    font-weight:300;
+	font-size:33px;
+	padding:16px 31px;
+	text-decoration:none;
+    margin: 0px auto;
+	animation: resaltado 3s infinite;
+
+}
+
+@keyframes resaltado {
+	0%{top:0px;}
+	50%{top:10px; background-color:none;}
+	100%{top:0px;}
+}
+
+.titulosMov:hover {
+	background-color:lightgray;
+	transform: scale(1.0);
+	transition: 0.3s;
+
+}
+
+
+/*MOVIMIENTO LOGO*/
+
+#avion{
+	position: relative;
+	animation: movimiento 5s infinite;
+}
+
+@keyframes movimiento {
+	0%{left: 0px;}
+	20%{left: 500px; background-color: darkgray;}
+	40%{left:700px; background-color: yellow;}
+    70%{left:1000px; background-color: orange;}
+}
+
+
+/* MEDIA QUERIES*/
+
+/*@media only screen and (max-width: 1280px){
+    #login{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-top: 0%;
+        padding-left: 3%;
+        padding-right: 3%;
+
+    }
+}
+
+
+@media only screen and (max-width: 1280px){
+    #contacto{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-top: 0%;
+        padding-left: 3%;
+        padding-right: 3%;
+
+    }
+}*/
+
+
+/*@media only screen and (max-width: 1280px){
+    #nosotros{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 10px;
+        text-align: center;
+        align-content: center;
+        align-items: center;*/
+
+        /*display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-top: 0%;
+        padding-left: 3%;
+        padding-right: 3%;*/
+   /* }
+}*/
+
+/*@media only screen and (min-width: 1280px){
+    .grid_city{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 4px;
+        grid-row-gap: 3px;
+        
+    }
+}*/
+
+@media only screen and (max-width: 1280px){
+    .container_city{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       /* grid-template-rows: 1fr;*/
+        /*grid-column-gap: 4px;
+        grid-row-gap: 3px;*/
+        gap: 10px;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        
+                
+    }
+}
+
+
+@media only screen and (max-width: 1280px){
+    .container_country{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       /* grid-template-rows: 1fr;*/
+        /*grid-column-gap: 4px;
+        grid-row-gap: 3px;*/
+        gap: 10px;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        
+                
+    }
+}
+
+
+/* NUEVO 22/12*/
+
+.form-control{
+    width: 70%;
+}
+
+.mb-3{
+    margin-left: 30%;
+
+
+}
+
+
+.btn{
+    margin-left: 30%;
+
+}
+
+.form-label{
+    font-weight: bold;
+    color: darkblue;
+}
+
+.form-label1{
+    color:darkslategray;
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: bold;
+        
+}
+
+.form-label1:hover{
+    color: green;
+
+}
+
+
+.slide{
+    width: 50vh;
+    size: 10px;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
