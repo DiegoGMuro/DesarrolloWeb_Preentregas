@@ -23,6 +23,10 @@ body {
     font-weight: bold;
 }
 
+.bajartexto{
+    padding-top: 8%;
+}
+
 h1 {
     color: blue;
     font-size: 45px;
@@ -126,6 +130,11 @@ nav ul {
         margin-top: 100px;
         display: flex;
         flex-direction: column;
+        /*column-gap: 0px;
+        row-gap: 0px;*/
+        
+
+
     }
 }
 
@@ -135,6 +144,7 @@ nav ul li {
     font-weight: bold;
     display: inline-block;
     position: relative;
+    line-height: 11%;
 
 }
 
@@ -215,8 +225,8 @@ header {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    height: 160px;
-    position: sticky;  /*SUPERPOSICION DEL HEADER*/
+    height: 300px;
+    /*position: sticky;  /*SUPERPOSICION DEL HEADER*/
     top: 0px;
     z-index: 1;
 
