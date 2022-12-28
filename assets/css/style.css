@@ -725,3 +725,11 @@ form label:hover {
     flex-direction: column;
     justify-content: center;
 }
+
+
+.search{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2%;
+    
+}
