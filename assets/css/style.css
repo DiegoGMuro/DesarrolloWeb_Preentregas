@@ -27,19 +27,19 @@ body {
     padding-top: 8%;
 }
 
-h1 {
+/*h1 {
     color: blue;
     font-size: 45px;
-    font-weight: 300;
-    font-family: 'Lobster', cursive;
+    /*font-weight: 300;*/
+   /* font-family: 'Lobster', cursive;
     display: flex;
     flex-direction: column;
     justify-content: top;
     align-items: left;
-    margin-left: 30px;
-    padding-bottom: 70px;
+    /*margin-left: 30px;*/
+   /* padding-bottom: 70px;
 
-}
+}*/
 
 h2 {
     color: darkblue;
@@ -144,7 +144,7 @@ nav ul li {
     font-weight: bold;
     display: inline-block;
     position: relative;
-    line-height: 11%;
+    /*line-height: 11%;*/
 
 }
 
@@ -172,6 +172,7 @@ nav ul ul li {
     display: block;
     width: 200px;
     padding: 0px;
+    line-height: 10px; /*agregado 28/12*/
 
 }
 
@@ -182,12 +183,16 @@ nav ul ul li a {
     font-weight: normal;
     text-decoration: none;
     text-align: left;
+    
+    
 }
 
 
 nav ul li:hover ul li a {
     display: block;
     background-color: grey;
+    
+    
 
 }
 
@@ -197,6 +202,8 @@ nav ul li:hover ul li a {
         display: flex;
         flex-direction: column;
         background-color: grey;
+        
+        
 
     }
 }
@@ -218,7 +225,7 @@ img:hover {
 
 /* Cabecera */
 
-header {
+/*header {
     background: linear-gradient(to right, rgb(146, 145, 144), rgb(66, 65, 65));
     display: flex;
     flex-direction: row;
@@ -227,21 +234,21 @@ header {
     align-items: center;
     height: 300px;
     /*position: sticky;  /*SUPERPOSICION DEL HEADER*/
-    top: 0px;
+ /*   top: 0px;
     z-index: 1;
 
 
-}
+}*/
 
 
-.logo {
+/*.logo {
     width: 120px;
     height: 50px;
     border: solid 2px darkslategrey;
     margin-left: 30px;
     margin-top: 110px;
 
-}
+}*/
 
 
 .textoAzul {
@@ -311,7 +318,7 @@ table {
 @media only screen and (min-width: 600px) {
     table {
         width: 70vh;
-        height: 38vh;
+        height: 36vh;
         display: block;
     }
 }
@@ -615,22 +622,23 @@ form label:hover {
 
 }
 
-.logoMov {
+/*.logoMov {
     display: block;
     position: relative;
     cursor: pointer;
     animation: resaltado 3s infinite;
 
 
-}
+}*/
 
-.logoMov:focus {
+/*.logoMov:focus {
     width: 20px;
     font-size: 60px;
     color: brown;
+    background: linear-gradient(to right, bisque, lightsalmon);
 
 
-}
+}*/
 
 
 .titulosMov {
@@ -732,4 +740,182 @@ form label:hover {
     justify-content: flex-end;
     padding-right: 2%;
     
+}
+
+
+/* MENU HAMBURGUESA*/
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background: linear-gradient(to right, rgb(146, 145, 144), rgb(66, 65, 65));
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    z-index: 1;
+}
+
+header{
+    position: sticky;  /*SUPERPOSICION DEL HEADER*/
+    top: 0px;
+    z-index: 1;
+
+}
+
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+    }
+
+.logo{
+    height: 40px;
+    background-color: yellow;
+}
+
+
+
+
+.fondos{
+    background: linear-gradient(to right, bisque, lightsalmon);
+    height: 30px;
+    
+}
+
+/* Separador */
+.my-4 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.logoMov {
+    color: blue;
+    font-size: 45px;
+    font-weight: 300;
+    font-family: 'Lobster', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: left;
+    margin-left: 0px;  /* antes 30px*/
+    padding-bottom: 70px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    animation: resaltado 3s infinite;
+    text-decoration: none;
+
+}
+
+@keyframes resaltado {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 10px;
+        background-color: none;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+
+
+
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    
+}
+nav ul li a{
+    color:yellow;
+    /*color: #fff;*/
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    /*text-transform: uppercase;*/
+    text-decoration: none;
+    
+}
+li a.active, li a:hover{
+    background: darkslategrey;
+    /*background: #000090;*/
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: yellowgreen;
+    /*color: #fff;*/
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+section{
+    background: url(fondo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+        
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to right, rgb(84, 236, 84), rgb(3, 78, 22));
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 0%;
+        
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: darkblue;
+        font-size: bold;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
 }
