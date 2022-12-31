@@ -1,7 +1,9 @@
+.vscode/*
 .vscode
 _abc.scss
 _def.scss
 _ghi.scss
 _jkl.scss
 _mno.scss
-main.css.map
+*.map
+*.scss
