@@ -128,12 +128,12 @@ nav ul {
 
 @media only screen and (max-width: 600px) {
     nav ul {
-        margin-top: 100px;
+        /*margin-top: 100px;*/
         display: flex;
         flex-direction: column;
-        /*column-gap: 0px;
-        row-gap: 0px;*/
-        /*line-height: 0px;*/
+        column-gap: 0px;
+        row-gap: 0px;
+        line-height: 0px;
         
 
 
@@ -203,10 +203,14 @@ nav ul li:hover ul li a {
 
 @media only screen and (max-width: 700px) {
     nav ul li:hover ul li a {
-        display: flex;
+        display: none;  /*antes FLEX*/
         flex-direction: column;
-        background-color: grey;
-        /*line-height: 0px;*/
+        background-color: transparent;
+        font-size: 15px;
+        font-weight: bold;
+        color:black;
+        margin: -18px;
+        line-height: 0px;
         
         
 
