@@ -312,6 +312,7 @@ img:hover {
     .video__maps {
         width: 60vh;
         height: 45vh;
+        
     }
 }
 
@@ -432,6 +433,7 @@ footer a {
         text-align: center;
         align-content: center;
         align-items: center;
+        margin-left: 240px;  /*Nuevo 31/12*/
 
 
     }
@@ -455,11 +457,11 @@ footer a {
         text-align: center;
         align-content: center;
         align-items: center;
+        margin-left: 240px; /*Nuevo 31/12*/
 
 
     }
 }
-
 
 .container--footer {
     width: 100%;
