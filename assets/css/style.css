@@ -8,38 +8,6 @@ body {
 
 }
 
-.achicarLetra{
-    font-size: 15px;
-
-}
-
-.achicarLetra2{
-    font-size: 14px;
-
-}
-
-.agrandarLetra{
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.bajartexto{
-    padding-top: 8%;
-}
-
-/*h1 {
-    color: blue;
-    font-size: 45px;
-    /*font-weight: 300;*/
-   /* font-family: 'Lobster', cursive;
-    display: flex;
-    flex-direction: column;
-    justify-content: top;
-    align-items: left;
-    /*margin-left: 30px;*/
-   /* padding-bottom: 70px;
-
-}*/
 
 h2 {
     color: darkblue;
@@ -93,10 +61,6 @@ tr {
     margin-left: auto;
 }
 
-section h2 {
-    text-align: center;
-}
-
 
 /* Separador */
 .my-4 {
@@ -107,11 +71,14 @@ section h2 {
 
 /* Menu y herencias */
 
-nav {
-    position: relative;
+nav{
+    background: linear-gradient(to right, rgb(146, 145, 144), rgb(59, 58, 58));
     bottom: 40px;
     text-align: bottom;
-
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    z-index: 1;
 }
 
 
@@ -121,7 +88,8 @@ nav ul {
     flex-direction: row;
     justify-content: right;
     align-items: center;
-    margin-right: 15px;
+    margin-right: 20px;
+    float: right;
 
 }
 
@@ -134,9 +102,7 @@ nav ul {
         column-gap: 0px;
         row-gap: 0px;
         line-height: 0px;
-        
-
-
+    
     }
 }
 
@@ -146,6 +112,8 @@ nav ul li {
     font-weight: bold;
     display: inline-block;
     position: relative;
+    line-height: 80px;
+    margin: 0 5px;
     /*line-height: 11%;*/
 
 }
@@ -156,12 +124,83 @@ nav ul li:hover ul {
 }
 
 
-nav ul li a {
-    color: rgb(60, 153, 196);
+nav ul li a{
+    color: yellow;
     font-size: 16px;
     font-style: normal;
     margin-bottom: 7px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+}
 
+li a.active, li a:hover{
+    background: darkslategrey;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: yellowgreen;
+    /*color: #fff;*/
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+    }
+
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+        
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to right, rgb(84, 236, 84), rgb(3, 78, 22));
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        
+    }
+    nav ul li{
+        display: block;
+        margin: 20px 0; /* Antes 50px 0*/
+        line-height: 0%;
+        
+    }
+    nav ul li a{
+        font-size: 17px; /* Antes 20px*/
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: lightskyblue;
+        font-size: bold;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
 }
 
 
@@ -230,35 +269,10 @@ img:hover {
     background-color: yellow;
 }
 
+/* HASTA ACA REVISADO 08/01/2023---------------------------------------------------------------------------------------------*/
 
 
 /* Cabecera */
-
-/*header {
-    background: linear-gradient(to right, rgb(146, 145, 144), rgb(66, 65, 65));
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    height: 300px;
-    /*position: sticky;  /*SUPERPOSICION DEL HEADER*/
- /*   top: 0px;
-    z-index: 1;
-
-
-}*/
-
-
-/*.logo {
-    width: 120px;
-    height: 50px;
-    border: solid 2px darkslategrey;
-    margin-left: 30px;
-    margin-top: 110px;
-
-}*/
-
 
 .textoAzul {
     color: darkblue;
@@ -633,24 +647,6 @@ form label:hover {
 
 }
 
-/*.logoMov {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    animation: resaltado 3s infinite;
-
-
-}*/
-
-/*.logoMov:focus {
-    width: 20px;
-    font-size: 60px;
-    color: brown;
-    background: linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33));
-
-
-}*/
-
 
 .titulosMov {
     background: linear-gradient(to right, lightblue, rgb(115, 115, 206));
@@ -765,13 +761,6 @@ form label:hover {
     
 }
 
-nav{
-    background: linear-gradient(to right, rgb(146, 145, 144), rgb(59, 58, 58));
-    height: 80px;
-    width: 100%;
-    position: sticky;
-    z-index: 1;
-}
 
 header{
     position: sticky;  /*SUPERPOSICION DEL HEADER*/
@@ -780,17 +769,11 @@ header{
 
 }
 
-.enlace{
-    position: absolute;
-    padding: 20px 50px;
-    }
 
 .logo{
     height: 40px;
     background-color: yellow;
 }
-
-
 
 
 .fondos{
@@ -799,11 +782,6 @@ header{
     
 }
 
-/* Separador */
-.my-4 {
-    margin-top: 1.5rem !important;
-    margin-bottom: 1.5rem !important;
-}
 
 .logoMov {
     color: blue;
@@ -839,94 +817,3 @@ header{
     }
 }
 
-
-nav ul{
-    float: right;
-    margin-right: 20px;
-}
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-    
-}
-nav ul li a{
-    color:yellow;
-    /*color: #fff;*/
-    font-size: 18px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    /*text-transform: uppercase;*/
-    text-decoration: none;
-    
-}
-li a.active, li a:hover{
-    background: darkslategrey;
-    /*background: #000090;*/
-    transition: .5s;
-}
-.checkbtn{
-    font-size: 30px;
-    color: yellowgreen;
-    /*color: #fff;*/
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-#check{
-    display: none;
-}
-section{
-    background: url(fondo.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: calc(100vh - 80px);
-}
-
-@media (max-width: 952px){
-    .enlace{
-        padding-left: 20px;
-    }
-    nav ul li a{
-        font-size: 16px;
-        
-    }
-}
-
-@media (max-width: 858px){
-    .checkbtn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: linear-gradient(to right, rgb(84, 236, 84), rgb(3, 78, 22));
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-        
-    }
-    nav ul li{
-        display: block;
-        margin: 20px 0; /* Antes 50px 0*/
-        line-height: 0%;
-        
-    }
-
-
-    nav ul li a{
-        font-size: 17px; /* Antes 20px*/
-    }
-    li a:hover, li a.active{
-        background: none;
-        color: darkblue;
-        font-size: bold;
-    }
-    #check:checked ~ ul{
-        left:0;
-    }
-}
