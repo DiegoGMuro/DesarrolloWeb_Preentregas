@@ -1,11 +1,14 @@
 
-@import "abc";
-@import "def";
-@import "ghi";
-@import "jkl";
-@import "mno";
+@use "_content";
+@use "_header";
+@use "_menu";
+@use "_footer";
+@use "_countries";
+@use "_cities";
+@use "_about";
+@use "_contact";
+@use "_login";
 
 
-body{
-    background-color: aqua;
-}
+
+
