@@ -1,0 +1,63 @@
+@use '_commons' as c;
+
+/*TABLE--------------------------------------------------------*/
+
+th {
+    color: #1707aa;
+
+}
+
+.textoAzul {
+    color: darkblue;
+    background-color: lemonchiffon;
+}
+
+td {
+    color: #292902;
+    background-color: lemonchiffon;
+    font-size: 13px;
+
+}
+
+.textoRemarcado {
+    color: darkslategray;
+    background-color: lemonchiffon;
+    font-weight: bold;
+    text-align: left;
+    font-size: 15px;
+
+}
+
+tr {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+table {
+    margin-right: auto;
+    margin-left: auto;
+    overflow-x: auto;
+    display: none;
+
+}
+
+@media only screen and (min-width: 600px) {
+    table {
+        width: 70vh;
+        height: 36vh;
+        display: block;
+    }
+}
+
+.ocultarinfo {
+    display: none;
+
+}
+
+@media only screen and (min-width: 600px) {
+    .ocultarinfo {
+        width: 70vh;
+        height: 5vh;
+        display: block;
+    }
+}
