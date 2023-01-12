@@ -1,5 +1,246 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+/*HEADER-----------------------------------------------------------*/
+/* Menu hamburguesa*/
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky; /*Superposicion del header*/
+  top: 0px;
+  z-index: 1;
+}
+
+.logo {
+  height: 40px;
+  background-color: yellow;
+}
+
+/*NAV------------------------------------------------------------*/
+nav {
+  background: linear-gradient(to right, rgb(146, 145, 144), rgb(59, 58, 58));
+  bottom: 40px;
+  text-align: bottom;
+  height: 80px;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+}
+
+nav ul {
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  margin-right: 20px;
+  float: right;
+}
+
+@media only screen and (max-width: 600px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    -moz-column-gap: 0px;
+         column-gap: 0px;
+    row-gap: 0px;
+    line-height: 0px;
+  }
+}
+nav ul li {
+  color: rgba(1, 5, 17, 0.8078431373);
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li:hover ul {
+  display: block;
+  background-color: grey;
+}
+
+nav ul li a {
+  color: yellow;
+  font-size: 16px;
+  font-style: normal;
+  margin-bottom: 7px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+li a.active, li a:hover {
+  background: darkslategrey;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: yellowgreen;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.enlace {
+  position: absolute;
+  padding: 20px 50px;
+}
+
+@media (max-width: 952px) {
+  .enlace {
+    padding-left: 20px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(84, 236, 84), rgb(3, 78, 22));
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+    line-height: 0%;
+  }
+  nav ul li a {
+    font-size: 17px;
+  }
+  li a:hover, li a.active {
+    background: none;
+    color: lightskyblue;
+    font-size: bold;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+nav ul ul {
+  position: absolute;
+  display: none;
+}
+
+nav ul ul li {
+  display: block;
+  width: 200px;
+  padding: 0px;
+  line-height: 10px;
+}
+
+nav ul ul li a {
+  color: white;
+  font-size: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: left;
+}
+
+nav ul li:hover ul li a {
+  display: block;
+  background-color: grey;
+  margin: 0;
+}
+
+@media only screen and (max-width: 700px) {
+  nav ul li:hover ul li a {
+    display: none;
+    flex-direction: column;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    margin: -18px;
+    line-height: 0px;
+  }
+}
+nav ul li a:hover {
+  color: yellow;
+  font-weight: bold;
+  background-color: black;
+}
+
+/*TABLE--------------------------------------------------------*/
+th {
+  color: #1707aa;
+}
+
+.textoAzul {
+  color: darkblue;
+  background-color: lemonchiffon;
+}
+
+td {
+  color: #292902;
+  background-color: lemonchiffon;
+  font-size: 13px;
+}
+
+.textoRemarcado {
+  color: darkslategray;
+  background-color: lemonchiffon;
+  font-weight: bold;
+  text-align: left;
+  font-size: 15px;
+}
+
+tr {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+table {
+  margin-right: auto;
+  margin-left: auto;
+  overflow-x: auto;
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  table {
+    width: 70vh;
+    height: 36vh;
+    display: block;
+  }
+}
+.ocultarinfo {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .ocultarinfo {
+    width: 70vh;
+    height: 5vh;
+    display: block;
+  }
+}
+/*CONTENT------------------------------------------------------*/
 body {
   margin: 0;
   padding: 0;
@@ -9,4 +250,421 @@ body {
 .my-4 {
   margin-top: 1.5rem !important;
   margin-bottom: 1.5rem !important;
+}
+
+h2 {
+  color: darkblue;
+  background: linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33));
+  text-align: center;
+}
+
+.titulosMov {
+  background: linear-gradient(to right, lightblue, rgb(115, 115, 206));
+  border-radius: 20px;
+  display: block;
+  position: relative;
+  width: 300px;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Lobster", cursive;
+  color: #020e0a;
+  text-align: center;
+  font-weight: 300;
+  font-size: 33px;
+  padding: 16px 31px;
+  text-decoration: none;
+  margin: 0px auto;
+  -webkit-animation: resaltado 3s infinite;
+          animation: resaltado 3s infinite;
+}
+
+.titulosMov:hover {
+  background-color: lightgray;
+  transform: scale(1);
+  transition: 0.3s;
+}
+
+.logoMov {
+  color: blue;
+  font-size: 45px;
+  font-weight: 300;
+  font-family: "Lobster", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: left;
+  margin-left: 0px;
+  padding-bottom: 70px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-animation: resaltado 3s infinite;
+          animation: resaltado 3s infinite;
+  text-decoration: none;
+}
+
+@-webkit-keyframes resaltado {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 10px;
+    background-color: none;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes resaltado {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 10px;
+    background-color: none;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.fondos {
+  background: linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33));
+  height: 30px;
+}
+
+p {
+  color: #020e0a;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+  font-family: cursive;
+  width: 85%;
+}
+
+.video__maps {
+  width: 45vh;
+  height: 30vh;
+}
+
+@media only screen and (min-width: 600px) {
+  .video__maps {
+    width: 60vh;
+    height: 45vh;
+  }
+}
+label {
+  color: #292902;
+  font-weight: bold;
+}
+
+/* Centrado*/
+.container {
+  width: 100%;
+  display: flex; /* inicio de flexbox*/
+  flex-direction: column; /* vertical u hotizontal*/
+  justify-content: center; /* alinerar vertical u hotizontal*/
+  align-items: center;
+  background: linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33));
+  text-align: left;
+}
+
+/* Boton leer mas*/
+.readMore_btn {
+  background-color: darkgreen;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 30px;
+  font-size: 12px;
+  box-shadow: 0px 0px 10px 0px #4caf50;
+  cursor: pointer;
+}
+
+.readMore_btn:hover {
+  box-shadow: none;
+  background-color: darkblue;
+  color: #fff;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
+}
+
+.hideText {
+  display: none;
+}
+
+.showText {
+  display: block;
+}
+
+#avion {
+  position: relative;
+  -webkit-animation: movimiento 5s infinite;
+          animation: movimiento 5s infinite;
+}
+
+@-webkit-keyframes movimiento {
+  0% {
+    left: 0px;
+  }
+  20% {
+    left: 100px;
+    background-color: darkgray;
+  }
+  40% {
+    left: 150px;
+    background-color: yellow;
+  }
+  60% {
+    left: 250px;
+    background-color: orange;
+  }
+}
+
+@keyframes movimiento {
+  0% {
+    left: 0px;
+  }
+  20% {
+    left: 100px;
+    background-color: darkgray;
+  }
+  40% {
+    left: 150px;
+    background-color: yellow;
+  }
+  60% {
+    left: 250px;
+    background-color: orange;
+  }
+}
+/*FOOTER---------------------------------------------------------*/
+img:hover {
+  background-color: yellow;
+}
+
+footer {
+  background: linear-gradient(to right, rgb(148, 195, 223), rgb(12, 68, 114));
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+footer p {
+  color: #1707aa;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer a {
+  margin: 10px;
+  display: inline;
+}
+
+.links {
+  color: #1707aa;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.container--footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/*COUNTRIES-CITIES---------------------------------------------------------------------*/
+h3 {
+  color: darkblue;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  background-color: none;
+}
+
+h4 {
+  color: darkred;
+  list-style-type: circle;
+  font-size: 25px;
+}
+
+.textoLogin {
+  color: darkslategray;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.textoPaises {
+  color: darkblue;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  background-color: none;
+}
+
+/*Contenedores*/
+.container_city {
+  width: 100%;
+  display: flex; /* inicio de flexbox*/
+  flex-direction: row; /* vertical u hotizontal*/
+  justify-content: space-evenly; /* alinerar vertical u hotizontal*/
+  align-items: center;
+  background: linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33));
+}
+
+@media only screen and (max-width: 1280px) {
+  .container_city {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+  }
+}
+.container_country {
+  width: 100%;
+  display: flex; /* inicio de flexbox*/
+  flex-direction: row; /* vertical u hotizontal*/
+  justify-content: space-evenly; /* alinerar vertical u hotizontal*/
+  align-items: center;
+  background: linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33));
+}
+
+@media only screen and (max-width: 1280px) {
+  .container_country {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+  }
+}
+/* Etiquetas interactivas -Ocultar texto-*/
+details {
+  color: #020e0a;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+  font-family: cursive;
+}
+
+summary {
+  color: darkgreen;
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33));
+}
+
+/*Carrusel de imagenes*/
+.imagen__ciudades {
+  width: 45vh;
+  height: 30vh;
+  border-radius: 7px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .imagen__ciudades {
+    width: 60vh;
+    height: 45vh;
+    margin-left: 34%;
+    border-radius: 7px;
+  }
+}
+/*CONTACT-LOGIN-------------------------------------------------------------------------*/
+.botonMov {
+  background: linear-gradient(to right, rgb(23, 120, 165), rgb(6, 6, 146));
+  border-radius: 20px;
+  display: block;
+  position: relative;
+  width: 200px;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #c5c215;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 16px 31px;
+  text-decoration: none;
+  margin: 0px auto;
+  -webkit-animation: resaltado 3s infinite;
+          animation: resaltado 3s infinite;
+}
+
+.coloreado {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33));
+}
+
+/* Formulario de contacto - Login*/
+form label {
+  color: darkblue;
+  font-size: 14px;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form label:hover {
+  color: red;
+}
+
+form input {
+  color: grey;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form textarea {
+  color: grey;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form h5:hover {
+  color: green;
+}
+
+.form-control {
+  width: 70%;
+}
+
+.form-label {
+  font-weight: bold;
+  color: darkblue;
+}
+
+.form-label1 {
+  color: darkslategray;
+  font-size: 15px;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.form-label1:hover {
+  color: green;
+}
+
+.mb-3 {
+  margin-left: 30%;
+}
+
+.btn {
+  margin-left: 30%;
 }/*# sourceMappingURL=main.css.map */

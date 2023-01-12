@@ -1,0 +1,185 @@
+@use '_commons' as c;
+
+/*NAV------------------------------------------------------------*/
+
+nav{
+    background: linear-gradient(to right, rgb(146, 145, 144), rgb(59, 58, 58));
+    bottom: 40px;
+    text-align: bottom;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    z-index: 1;
+}
+
+nav ul {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin-right: 20px;
+    float: right;
+
+}
+
+@media only screen and (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        column-gap: 0px;
+        row-gap: 0px;
+        line-height: 0px;
+    
+    }
+}
+
+
+nav ul li {
+    color: #010511ce;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+
+nav ul li:hover ul {
+    display: block;
+    background-color: grey;
+}
+
+nav ul li a{
+    color: yellow;
+    font-size: 16px;
+    font-style: normal;
+    margin-bottom: 7px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+li a.active, li a:hover{
+    background: darkslategrey;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: yellowgreen;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+    }
+
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+        
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to right, rgb(84, 236, 84), rgb(3, 78, 22));
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        
+    }
+    nav ul li{
+        display: block;
+        margin: 20px 0; 
+        line-height: 0%;
+        
+    }
+    nav ul li a{
+        font-size: 17px; 
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: lightskyblue;
+        font-size: bold;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+
+nav ul ul {
+    position: absolute;
+    display: none;
+}
+
+nav ul ul li {
+    display: block;
+    width: 200px;
+    padding: 0px;
+    line-height: 10px; 
+
+}
+
+nav ul ul li a {
+    color: white;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: left;
+    
+}
+
+
+nav ul li:hover ul li a {
+    display: block;
+    background-color: grey;
+    margin: 0;
+
+}
+
+
+@media only screen and (max-width: 700px) {
+    nav ul li:hover ul li a {
+        display: none;
+        flex-direction: column;
+        background-color: transparent;
+        font-size: 15px;
+        font-weight: bold;
+        color:black;
+        margin: -18px;
+        line-height: 0px;
+    
+    }
+}
+
+
+nav ul li a:hover {
+    color: yellow;
+    font-weight: bold;
+    background-color: black;
+
+}
+
