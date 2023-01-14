@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
 /*HEADER-----------------------------------------------------------*/
-/* Menu hamburguesa*/
 * {
   padding: 0;
   margin: 0;
@@ -23,6 +22,7 @@ header {
 }
 
 /*NAV------------------------------------------------------------*/
+/* Menu hamburguesa*/
 nav {
   background: linear-gradient(to right, rgb(146, 145, 144), rgb(59, 58, 58));
   bottom: 40px;
@@ -141,6 +141,7 @@ li a.active, li a:hover {
     left: 0;
   }
 }
+/* Navegador--------------------------------------------------*/
 nav ul ul {
   position: absolute;
   display: none;
