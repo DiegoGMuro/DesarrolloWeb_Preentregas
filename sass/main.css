@@ -33,7 +33,6 @@ nav {
   position: sticky;
   z-index: 1;
 }
-
 nav ul {
   font-size: 20px;
   display: flex;
@@ -43,7 +42,6 @@ nav ul {
   margin-right: 20px;
   float: right;
 }
-
 @media only screen and (max-width: 600px) {
   nav ul {
     display: flex;
@@ -62,12 +60,6 @@ nav ul li {
   line-height: 80px;
   margin: 0 5px;
 }
-
-nav ul li:hover ul {
-  display: block;
-  background-color: grey;
-}
-
 nav ul li a {
   color: yellow;
   font-size: 16px;
@@ -76,6 +68,32 @@ nav ul li a {
   padding: 7px 13px;
   border-radius: 3px;
   text-decoration: none;
+}
+nav ul li a:hover {
+  color: orange;
+  font-weight: bold;
+  background-color: black;
+}
+nav ul li:hover ul {
+  display: block;
+  background-color: grey;
+}
+nav ul li:hover ul li a {
+  display: block;
+  background-color: grey;
+  margin: 0;
+}
+@media only screen and (max-width: 700px) {
+  nav ul li:hover ul li a {
+    display: none;
+    flex-direction: column;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    margin: -18px;
+    line-height: 0px;
+  }
 }
 
 li a.active, li a:hover {
@@ -132,7 +150,8 @@ li a.active, li a:hover {
   nav ul li a {
     font-size: 17px;
   }
-  li a:hover, li a.active {
+  li a:hover,
+li a.active {
     background: none;
     color: lightskyblue;
     font-size: bold;
@@ -141,19 +160,17 @@ li a.active, li a:hover {
     left: 0;
   }
 }
-/* Navegador--------------------------------------------------*/
+/* Navegador*/
 nav ul ul {
   position: absolute;
   display: none;
 }
-
 nav ul ul li {
   display: block;
   width: 200px;
   padding: 0px;
   line-height: 10px;
 }
-
 nav ul ul li a {
   color: white;
   font-size: 15px;
@@ -163,48 +180,20 @@ nav ul ul li a {
   text-align: left;
 }
 
-nav ul li:hover ul li a {
-  display: block;
-  background-color: grey;
-  margin: 0;
-}
-
-@media only screen and (max-width: 700px) {
-  nav ul li:hover ul li a {
-    display: none;
-    flex-direction: column;
-    background-color: transparent;
-    font-size: 15px;
-    font-weight: bold;
-    color: black;
-    margin: -18px;
-    line-height: 0px;
-  }
-}
-nav ul li a:hover {
-  color: yellow;
-  font-weight: bold;
-  background-color: black;
-}
-
 /*TABLE--------------------------------------------------------*/
-th {
-  color: #1707aa;
-}
-
 .textoAzul {
   color: darkblue;
   background-color: lemonchiffon;
 }
 
 td {
-  color: #292902;
+  color: darkblue;
   background-color: lemonchiffon;
   font-size: 13px;
 }
 
 .textoRemarcado {
-  color: darkslategray;
+  color: darkblue;
   background-color: lemonchiffon;
   font-weight: bold;
   text-align: left;
@@ -222,7 +211,6 @@ table {
   overflow-x: auto;
   display: none;
 }
-
 @media only screen and (min-width: 600px) {
   table {
     width: 70vh;
@@ -230,10 +218,10 @@ table {
     display: block;
   }
 }
+
 .ocultarinfo {
   display: none;
 }
-
 @media only screen and (min-width: 600px) {
   .ocultarinfo {
     width: 70vh;
@@ -241,6 +229,7 @@ table {
     display: block;
   }
 }
+
 /*CONTENT------------------------------------------------------*/
 body {
   margin: 0;
@@ -266,10 +255,9 @@ h2 {
   position: relative;
   width: 300px;
   cursor: pointer;
-  color: #ffffff;
-  font-family: "Lobster", cursive;
-  color: #020e0a;
+  color: black;
   text-align: center;
+  font-family: "Lobster", cursive;
   font-weight: 300;
   font-size: 33px;
   padding: 16px 31px;
@@ -278,9 +266,9 @@ h2 {
   -webkit-animation: resaltado 3s infinite;
           animation: resaltado 3s infinite;
 }
-
 .titulosMov:hover {
-  background-color: lightgray;
+  background: linear-gradient(to right, whitesmoke, blue);
+  color: red;
   transform: scale(1);
   transition: 0.3s;
 }
@@ -302,6 +290,9 @@ h2 {
   -webkit-animation: resaltado 3s infinite;
           animation: resaltado 3s infinite;
   text-decoration: none;
+}
+.logoMov:hover {
+  color: darkgreen;
 }
 
 @-webkit-keyframes resaltado {
@@ -347,13 +338,13 @@ p {
   width: 45vh;
   height: 30vh;
 }
-
 @media only screen and (min-width: 600px) {
   .video__maps {
     width: 60vh;
     height: 45vh;
   }
 }
+
 label {
   color: #292902;
   font-weight: bold;
@@ -448,13 +439,11 @@ footer {
   font-weight: bold;
   margin-bottom: 5px;
 }
-
 footer p {
   color: #1707aa;
   text-align: center;
   font-weight: bold;
 }
-
 footer a {
   margin: 10px;
   display: inline;
@@ -509,7 +498,7 @@ h4 {
 }
 
 /*Contenedores*/
-.container_city {
+.container_city, .container_country {
   width: 100%;
   display: flex; /* inicio de flexbox*/
   flex-direction: row; /* vertical u hotizontal*/
@@ -517,9 +506,8 @@ h4 {
   align-items: center;
   background: linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33));
 }
-
 @media only screen and (max-width: 1280px) {
-  .container_city {
+  .container_city, .container_country {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -528,26 +516,7 @@ h4 {
     align-items: center;
   }
 }
-.container_country {
-  width: 100%;
-  display: flex; /* inicio de flexbox*/
-  flex-direction: row; /* vertical u hotizontal*/
-  justify-content: space-evenly; /* alinerar vertical u hotizontal*/
-  align-items: center;
-  background: linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33));
-}
 
-@media only screen and (max-width: 1280px) {
-  .container_country {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-  }
-}
-/* Etiquetas interactivas -Ocultar texto-*/
 details {
   color: #020e0a;
   font-size: 14px;
@@ -570,7 +539,6 @@ summary {
   height: 30vh;
   border-radius: 7px;
 }
-
 @media only screen and (min-width: 1280px) {
   .imagen__ciudades {
     width: 60vh;
@@ -579,22 +547,22 @@ summary {
     border-radius: 7px;
   }
 }
+
 /*CONTACT-LOGIN-------------------------------------------------------------------------*/
 .botonMov {
-  background: linear-gradient(to right, rgb(23, 120, 165), rgb(6, 6, 146));
+  background: linear-gradient(to right, orange, red);
   border-radius: 20px;
   display: block;
   position: relative;
   width: 200px;
   cursor: pointer;
-  color: #ffffff;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #c5c215;
+  color: yellow;
   text-align: center;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
   font-size: 20px;
   padding: 16px 31px;
-  text-decoration: none;
   margin: 0px auto;
   -webkit-animation: resaltado 3s infinite;
           animation: resaltado 3s infinite;
@@ -615,11 +583,9 @@ form label {
   font-weight: bolder;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 form label:hover {
   color: red;
 }
-
 form input {
   color: grey;
   font-size: 14px;
@@ -630,16 +596,11 @@ form input {
   justify-content: center;
   align-items: center;
 }
-
 form textarea {
   color: grey;
   font-size: 14px;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-form h5:hover {
-  color: green;
 }
 
 .form-control {
@@ -657,9 +618,8 @@ form h5:hover {
   font-family: cursive;
   font-weight: bold;
 }
-
 .form-label1:hover {
-  color: green;
+  color: whitesmoke;
 }
 
 .mb-3 {

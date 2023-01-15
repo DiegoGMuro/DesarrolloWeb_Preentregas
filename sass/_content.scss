@@ -17,48 +17,58 @@ body {
 
 
 h2 {
-    color: darkblue;
-    background: linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33));
+    color: map-get(c.$colores , titpaisesindex );
+    background: map-get(c.$colores, gradprincipal);
     text-align: center;
 }
 
 .titulosMov {
-    background: linear-gradient(to right, lightblue, rgb(115, 115, 206));
+    background: map-get(c.$colores , gradtitulos );
     border-radius: 20px;
     display: block;
     position: relative;
     width: 300px;
     cursor: pointer;
-    color: #ffffff;
-    font-family: 'Lobster', cursive;
-    color: #020e0a;
+    color: black;
     text-align: center;
-    font-weight: 300;
-    font-size: 33px;
+
+    font: {
+        family: 'Lobster', cursive;
+        weight: 300;
+        size: 33px;
+    }
+
     padding: 16px 31px;
     text-decoration: none;
     margin: 0px auto;
     animation: resaltado 3s infinite;
 
+    &:hover {
+        background: map-get(c.$colores, gradtituloshover);
+        color: red;
+        transform: scale(1.0);
+        transition: 0.3s;
+
+    }
+
 }
 
-.titulosMov:hover {
-    background-color: lightgray;
-    transform: scale(1.0);
-    transition: 0.3s;
 
-}
 
 .logoMov {
     color: blue;
-    font-size: 45px;
-    font-weight: 300;
-    font-family: 'Lobster', cursive;
+
+    font: {
+        size: 45px;
+        weight: 300;
+        family: 'Lobster', cursive;
+    }
+
     display: flex;
     flex-direction: column;
     justify-content: top;
     align-items: left;
-    margin-left: 0px; 
+    margin-left: 0px;
     padding-bottom: 70px;
     display: block;
     position: relative;
@@ -66,6 +76,9 @@ h2 {
     animation: resaltado 3s infinite;
     text-decoration: none;
 
+    &:hover {
+        color: darkgreen;
+    }
 }
 
 @keyframes resaltado {
@@ -84,7 +97,7 @@ h2 {
 }
 
 .fondos{
-    background: linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33));
+    background: map-get(c.$colores, gradprincipal);
     height: 30px;
     
 }
@@ -92,26 +105,29 @@ h2 {
 
 p {
     color: #020e0a;
-    font-size: 14px;
-    font-weight: normal;
-    font-style: italic;
-    font-family: cursive;
+
+    font: {
+        size: 14px;
+        weight: normal;
+        style: italic;
+        family: cursive;
+    }
+
     width: 85%;
-    
+
 }
 
 .video__maps {
     width: 45vh;
     height: 30vh;
-}
-
-@media only screen and (min-width: 600px) {
-    .video__maps {
+    @media only screen and (min-width: 600px) {
         width: 60vh;
         height: 45vh;
-        
+
     }
+
 }
+
 
 
 label {
@@ -127,7 +143,7 @@ label {
     flex-direction: column;  /* vertical u hotizontal*/
     justify-content: center; /* alinerar vertical u hotizontal*/
     align-items: center;
-    background: linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33));
+    background: map-get(c.$colores, gradprincipal);
     text-align: left;
 
 }

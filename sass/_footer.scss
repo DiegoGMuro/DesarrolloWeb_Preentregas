@@ -7,31 +7,34 @@ img:hover {
 }
 
 footer {
-    background: linear-gradient(to right, rgb(148, 195, 223), rgb(12, 68, 114));
+    background: map-get(c.$colores , gradfooter );
     font-weight: bold;
     margin-bottom: 5px;
 
+    p {
+        color: #1707aa;
+        text-align: center;
+        font-weight: bold;
+
+    }
+
+    a {
+        margin: 10px;
+        display: inline;
+
+    }
+
 }
 
 
-footer p {
-    color: #1707aa;
-    text-align: center;
-    font-weight: bold;
-}
-
-footer a {
-    margin: 10px;
-    display: inline;
-
-}
 
 .links {
     color: #1707aa;
     text-align: center;
-    font-weight: bold;
-    font-size: 15px;
-
+    font: {
+        weight: bold;
+        size: 15px;
+    }
 }
 
 .container--footer {

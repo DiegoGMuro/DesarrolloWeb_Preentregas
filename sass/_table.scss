@@ -2,62 +2,60 @@
 
 /*TABLE--------------------------------------------------------*/
 
-th {
-    color: #1707aa;
-
+@mixin tabla($letra: darkblue, $fondo: lemonchiffon){
+    color: $letra;
+    background-color: $fondo;
 }
 
 .textoAzul {
-    color: darkblue;
-    background-color: lemonchiffon;
+    @include tabla;
+
 }
 
-td {
-    color: #292902;
-    background-color: lemonchiffon;
-    font-size: 13px;
-
+td{
+    @include tabla;
+    font-size: 13px ;
 }
 
 .textoRemarcado {
-    color: darkslategray;
-    background-color: lemonchiffon;
+    @include tabla;
     font-weight: bold;
     text-align: left;
     font-size: 15px;
 
 }
 
-tr {
-    margin-right: auto;
-    margin-left: auto;
+
+@mixin margenes($derecho: auto, $izquierdo: auto){
+    margin-right: $derecho;
+    margin-left: $izquierdo;
+}
+
+tr{
+    @include margenes();
 }
 
 table {
-    margin-right: auto;
-    margin-left: auto;
+    @include margenes();
     overflow-x: auto;
     display: none;
 
-}
-
-@media only screen and (min-width: 600px) {
-    table {
+    @media only screen and (min-width: 600px) {
         width: 70vh;
         height: 36vh;
         display: block;
     }
 }
 
+
 .ocultarinfo {
     display: none;
 
-}
-
-@media only screen and (min-width: 600px) {
-    .ocultarinfo {
+    @media only screen and (min-width: 600px) {
         width: 70vh;
         height: 5vh;
         display: block;
     }
+
 }
+
