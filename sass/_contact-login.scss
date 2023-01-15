@@ -3,67 +3,81 @@
 
 /*CONTACT-LOGIN-------------------------------------------------------------------------*/
 
+
 .botonMov {
-    background: linear-gradient(to right, rgb(23, 120, 165), rgb(6, 6, 146));
+    background: map-get(c.$colores , gradcontactologin );
     border-radius: 20px;
     display: block;
     position: relative;
     width: 200px;
     cursor: pointer;
-    color: #ffffff;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #c5c215;
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
+    color: yellow;
+    text: {
+            align: center;
+            decoration: none;
+        }
+        font: {
+            family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            weight: bold;
+            size: 20px;
+        }
     padding: 16px 31px;
-    text-decoration: none;
     margin: 0px auto;
     animation: resaltado 3s infinite;
 
 }
+
 
 .coloreado {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33));
+    background: map-get(c.$colores, gradprincipal);
 }
 
 /* Formulario de contacto - Login*/
-form label {
-    color: darkblue;
-    font-size: 14px;
-    font-weight: bolder;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+form {
+    label {
+        color: darkblue;
+    
+        font: {
+            size: 14px;
+            weight: bolder;
+            family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    
+        &:hover {
+            color: red;
+        }
+    }
+    input {
+        color: grey;
+    
+        font: {
+            size: 14px;
+            weight: normal;
+            family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    
+        width: 65%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    textarea {
+        color: grey;
+    
+        font: {
+            size: 14px;
+            weight: bold;
+            family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    }
 }
 
-form label:hover {
-    color: red;
-}
 
-form input {
-    color: grey;
-    font-size: 14px;
-    font-weight: normal;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 65%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-form textarea {
-    color: grey;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-form h5:hover {
-    color: green;
-}
 
 .form-control {
     width: 70%;
@@ -76,14 +90,19 @@ form h5:hover {
 
 .form-label1 {
     color: darkslategray;
-    font-size: 15px;
-    font-family: cursive;
-    font-weight: bold;
+
+    font: {
+        size: 15px;
+        family: cursive;
+        weight: bold;
+    }
+
+    &:hover {
+        color: whitesmoke;
+
+    }
 }
 
-.form-label1:hover {
-    color: green;
-}
 
 .mb-3 {
     margin-left: 30%;

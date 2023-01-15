@@ -4,36 +4,53 @@
 /*COUNTRIES-CITIES---------------------------------------------------------------------*/
 
 h3 {
-    color: darkblue;
-    font-size: 25px;
-    font-style: italic;
-    font-weight: bold;
-    text-decoration: underline;
-    text-align: center;
+    color: map-get(c.$colores , titpaisesindex );
+
+    font : {
+        size: 25px;
+        style: italic;
+        weight: bold;
+    }
+
+    text: {
+        decoration: underline;
+        align: center;
+    }
+
     background-color: none;
 
 }
 
 h4 {
-    color: darkred;
+    color: map-get(c.$colores , titciudades );
     list-style-type: circle;
     font-size: 25px;
 }
 
 .textoLogin {
     color: darkslategray;
-    font-family: cursive;
-    font-weight: bold;
+
+    font: {
+        family: cursive;
+        weight: bold;
+    }
 
 }
 
 .textoPaises {
-    color: darkblue;
-    font-size: 25px;
-    font-style: italic;
-    font-weight: bold;
-    text-decoration: underline;
-    text-align: center;
+    color:map-get(c.$colores , titpaisesindex );
+
+    font: {
+        size: 25px;
+        style: italic;
+        weight: bold;
+    }
+
+    text: {
+        decoration: underline;
+        align: center;
+    }
+
     background-color: none
 }
 
@@ -44,78 +61,62 @@ h4 {
     flex-direction: row; /* vertical u hotizontal*/
     justify-content: space-evenly; /* alinerar vertical u hotizontal*/
     align-items: center;
-    background: linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33));
+    background: map-get(c.$colores, gradprincipal);
 
-}
-
-@media only screen and (max-width: 1280px) {
-    .container_city {
+    @media only screen and (max-width: 1280px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         text-align: center;
         align-content: center;
         align-items: center;
-    
+
     }
 }
 
 .container_country {
-    width: 100%;
-    display: flex; /* inicio de flexbox*/
-    flex-direction: row; /* vertical u hotizontal*/
-    justify-content: space-evenly; /* alinerar vertical u hotizontal*/
-    align-items: center;
-    background: linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33));
-
+    @extend .container_city
 }
 
-@media only screen and (max-width: 1280px) {
-    .container_country {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        text-align: center;
-        align-content: center;
-        align-items: center;
-    
-    }
-}
 
-/* Etiquetas interactivas -Ocultar texto-*/
+
 details {
     color: #020e0a;
-    font-size: 14px;
-    font-weight: normal;
-    font-style: italic;
-    font-family: cursive;
 
+    font: {
+        size: 14px;
+        weight: normal;
+        style: italic;
+        family: cursive;
+    }
 }
 
 summary {
     color: darkgreen;
-    font-size: 15px;
-    font-weight: bolder;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33));
+
+    font: {
+        size: 15px;
+        weight: bolder;
+        family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    background: map-get(c.$colores, gradprincipal);
 
 }
-
 /*Carrusel de imagenes*/
 .imagen__ciudades {
     width: 45vh;
     height: 30vh;
     border-radius: 7px;
-}
 
-@media only screen and (min-width: 1280px) {
-    .imagen__ciudades {
+    @media only screen and (min-width: 1280px) {
         width: 60vh;
         height: 45vh;
         margin-left: 34%;
         border-radius: 7px;
     }
 }
+
 
 
 
