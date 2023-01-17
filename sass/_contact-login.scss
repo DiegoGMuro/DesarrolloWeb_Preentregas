@@ -11,7 +11,7 @@
     position: relative;
     width: 200px;
     cursor: pointer;
-    color: yellow;
+    color: darkblue;
     text: {
             align: center;
             decoration: none;
@@ -24,6 +24,13 @@
     padding: 16px 31px;
     margin: 0px auto;
     animation: resaltado 3s infinite;
+    &:hover {
+        background: map-get(c.$colores, gradtituloshover);
+        color: darkblue;
+        transform: scale(1.0);
+        transition: 0.3s;
+
+    }
 
 }
 
