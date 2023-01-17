@@ -16,4 +16,4 @@ CAMBIAR A MASTER
 git checkout master
 
 MERGEAR
-git merge 3ra-preentrega-desarrollo-web
+git merge Entrega-final-desarrollo-web
