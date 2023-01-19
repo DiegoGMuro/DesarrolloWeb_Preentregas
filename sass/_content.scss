@@ -120,9 +120,11 @@ p {
 .video__maps {
     width: 45vh;
     height: 30vh;
-    @media only screen and (min-width: 600px) {
+
+    @media only screen and (min-width: 768px) {
         width: 60vh;
         height: 45vh;
+
 
     }
 
