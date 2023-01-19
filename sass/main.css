@@ -42,7 +42,7 @@ nav ul {
   margin-right: 20px;
   float: right;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   nav ul {
     display: flex;
     flex-direction: column;
@@ -83,7 +83,7 @@ nav ul li:hover ul li a {
   background-color: grey;
   margin: 0;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   nav ul li:hover ul li a {
     display: none;
     flex-direction: column;
@@ -211,7 +211,7 @@ table {
   overflow-x: auto;
   display: none;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   table {
     width: 70vh;
     height: 36vh;
@@ -222,7 +222,7 @@ table {
 .ocultarinfo {
   display: none;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .ocultarinfo {
     width: 70vh;
     height: 5vh;
@@ -338,7 +338,7 @@ p {
   width: 45vh;
   height: 30vh;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .video__maps {
     width: 60vh;
     height: 45vh;
@@ -500,20 +500,18 @@ h4 {
 /*Contenedores*/
 .container_city, .container_country {
   width: 100%;
-  display: flex; /* inicio de flexbox*/
-  flex-direction: row; /* vertical u hotizontal*/
-  justify-content: space-evenly; /* alinerar vertical u hotizontal*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
   background: linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33));
 }
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 768px) {
   .container_city, .container_country {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     text-align: center;
-    align-content: center;
-    align-items: center;
   }
 }
 
@@ -535,16 +533,15 @@ summary {
 
 /*Carrusel de imagenes*/
 .imagen__ciudades {
-  width: 45vh;
-  height: 30vh;
-  border-radius: 7px;
+  display: none;
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 768px) {
   .imagen__ciudades {
     width: 60vh;
     height: 45vh;
     margin-left: 34%;
     border-radius: 7px;
+    display: block;
   }
 }
 

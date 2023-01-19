@@ -57,22 +57,21 @@ h4 {
 /*Contenedores*/
 .container_city {
     width: 100%;
-    display: flex; /* inicio de flexbox*/
-    flex-direction: row; /* vertical u hotizontal*/
-    justify-content: space-evenly; /* alinerar vertical u hotizontal*/
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-evenly; 
     align-items: center;
     background: map-get(c.$colores, gradprincipal);
 
-    @media only screen and (max-width: 1280px) {
+    @media only screen and (max-width: 768px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         text-align: center;
-        align-content: center;
-        align-items: center;
-
+        
     }
 }
+
 
 .container_country {
     @extend .container_city
@@ -105,15 +104,14 @@ summary {
 }
 /*Carrusel de imagenes*/
 .imagen__ciudades {
-    width: 45vh;
-    height: 30vh;
-    border-radius: 7px;
+    display: none;
 
-    @media only screen and (min-width: 1280px) {
+    @media only screen and (min-width: 768px) {
         width: 60vh;
         height: 45vh;
         margin-left: 34%;
         border-radius: 7px;
+        display: block;
     }
 }
 

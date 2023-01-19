@@ -21,7 +21,7 @@ nav {
         margin-right: 20px;
         float: right;
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 768px) {
             display: flex;
             flex-direction: column;
             column-gap: 0px;
@@ -69,7 +69,7 @@ nav {
                     background-color: grey;
                     margin: 0;
 
-                    @media only screen and (max-width: 700px) {
+                    @media only screen and (max-width: 768px) {
                         display: none;
                         flex-direction: column;
                         background-color: transparent;

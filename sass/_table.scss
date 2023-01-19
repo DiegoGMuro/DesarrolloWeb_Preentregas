@@ -40,7 +40,7 @@ table {
     overflow-x: auto;
     display: none;
 
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 768px) {
         width: 70vh;
         height: 36vh;
         display: block;
@@ -51,7 +51,7 @@ table {
 .ocultarinfo {
     display: none;
 
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 768px) {
         width: 70vh;
         height: 5vh;
         display: block;
