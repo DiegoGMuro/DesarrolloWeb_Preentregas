@@ -3,13 +3,13 @@
 
 
 $colores:(
-    gradprincipal:linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33)),
-    gradtitulos:linear-gradient(to right, lightblue, rgb(115, 115, 206)),
-    gradtituloshover:linear-gradient(to right, whitesmoke, blue),
+    gradprincipal:lightgreen,
+    gradtitulos: lightblue,
+    gradtituloshover:lightblue,
     gradnav:linear-gradient(to right, rgb(146, 145, 144), rgb(59, 58, 58)),
     gradhamburguesa: linear-gradient(to right, rgb(84, 236, 84), rgb(3, 78, 22)),
-    gradfooter: linear-gradient(to right, rgb(148, 195, 223), rgb(12, 68, 114)),
-    gradcontactologin:linear-gradient(to right, yellowgreen, darkgreen),
+    gradfooter: linear-gradient(to right, rgb(146, 145, 144), rgb(59, 58, 58)),
+    gradcontactologin:green,
     titpaisesindex:darkblue,
     titciudades:darkred,
 );

@@ -11,13 +11,6 @@ footer {
     font-weight: bold;
     margin-bottom: 5px;
 
-    p {
-        color: #1707aa;
-        text-align: center;
-        font-weight: bold;
-
-    }
-
     a {
         margin: 10px;
         display: inline;
@@ -29,7 +22,7 @@ footer {
 
 
 .links {
-    color: #1707aa;
+    color: whitesmoke;
     text-align: center;
     font: {
         weight: bold;
@@ -37,7 +30,7 @@ footer {
     }
 }
 
-.container--footer {
+.contenedor--footer {
     width: 100%;
     display: flex;
     flex-direction: row;

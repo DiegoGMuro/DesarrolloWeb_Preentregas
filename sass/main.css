@@ -18,7 +18,6 @@ header {
 
 .logo {
   height: 40px;
-  background-color: yellow;
 }
 
 /*NAV------------------------------------------------------------*/
@@ -70,7 +69,7 @@ nav ul li a {
   text-decoration: none;
 }
 nav ul li a:hover {
-  color: orange;
+  color: lightgreen;
   font-weight: bold;
   background-color: black;
 }
@@ -236,20 +235,14 @@ body {
   padding: 0;
 }
 
-/* Separador */
-.my-4 {
-  margin-top: 1.5rem !important;
-  margin-bottom: 1.5rem !important;
-}
-
 h2 {
   color: darkblue;
-  background: linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33));
+  background: lightgreen;
   text-align: center;
 }
 
 .titulosMov {
-  background: linear-gradient(to right, lightblue, rgb(115, 115, 206));
+  background: lightblue;
   border-radius: 20px;
   display: block;
   position: relative;
@@ -267,14 +260,15 @@ h2 {
           animation: resaltado 3s infinite;
 }
 .titulosMov:hover {
-  background: linear-gradient(to right, whitesmoke, blue);
-  color: red;
+  background: lightblue;
+  color: darkblue;
   transform: scale(1);
   transition: 0.3s;
 }
 
 .logoMov {
-  color: blue;
+  color: darkgreen;
+  padding-left: 20px;
   font-size: 45px;
   font-weight: 300;
   font-family: "Lobster", cursive;
@@ -321,7 +315,7 @@ h2 {
   }
 }
 .fondos {
-  background: linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33));
+  background: lightgreen;
   height: 30px;
 }
 
@@ -351,43 +345,74 @@ label {
 }
 
 /* Centrado*/
-.container {
+.contenedor {
   width: 100%;
   display: flex; /* inicio de flexbox*/
   flex-direction: column; /* vertical u hotizontal*/
   justify-content: center; /* alinerar vertical u hotizontal*/
   align-items: center;
-  background: linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33));
+  background: lightgreen;
   text-align: left;
 }
 
-/* Boton leer mas*/
-.readMore_btn {
-  background-color: darkgreen;
-  border: none;
-  border-radius: 20px;
-  color: white;
-  padding: 10px 30px;
-  font-size: 12px;
-  box-shadow: 0px 0px 10px 0px #4caf50;
-  cursor: pointer;
+#Euro_tabla_mapa, #Nosotros {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: lightgreen;
 }
 
-.readMore_btn:hover {
-  box-shadow: none;
-  background-color: darkblue;
-  color: #fff;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
+#home, #cities, #countries {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: lightgreen;
 }
 
-.hideText {
-  display: none;
+.infogral {
+  margin-left: 20%;
+  margin-bottom: 10%;
+  margin-top: 10%;
 }
 
-.showText {
-  display: block;
+.Euro_video {
+  width: 65vh;
+  height: 50vh;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+}
+@media only screen and (min-width: 768px) {
+  .Euro_video {
+    width: 70vh;
+    height: 55vh;
+  }
 }
 
+.Euro_texto {
+  margin-top: 10%;
+  padding-left: 19%;
+  padding-right: 19%;
+  color: black;
+}
+
+@media only screen and (max-width: 1280px) {
+  #home, #countries, #cities {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .infogral {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+  }
+  .Euro_texto {
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 #avion {
   position: relative;
   -webkit-animation: movimiento 5s infinite;
@@ -435,14 +460,9 @@ img:hover {
 }
 
 footer {
-  background: linear-gradient(to right, rgb(148, 195, 223), rgb(12, 68, 114));
+  background: linear-gradient(to right, rgb(146, 145, 144), rgb(59, 58, 58));
   font-weight: bold;
   margin-bottom: 5px;
-}
-footer p {
-  color: #1707aa;
-  text-align: center;
-  font-weight: bold;
 }
 footer a {
   margin: 10px;
@@ -450,13 +470,13 @@ footer a {
 }
 
 .links {
-  color: #1707aa;
+  color: whitesmoke;
   text-align: center;
   font-weight: bold;
   font-size: 15px;
 }
 
-.container--footer {
+.contenedor--footer {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -498,16 +518,16 @@ h4 {
 }
 
 /*Contenedores*/
-.container_city, .container_country {
+.contenedor_city {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  background: linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33));
+  background: lightgreen;
 }
 @media only screen and (max-width: 768px) {
-  .container_city, .container_country {
+  .contenedor_city {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -528,7 +548,11 @@ summary {
   font-size: 15px;
   font-weight: bolder;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33));
+  background: lightgreen;
+}
+summary:hover {
+  background-color: lightseagreen;
+  color: whitesmoke;
 }
 
 /*Carrusel de imagenes*/
@@ -547,13 +571,13 @@ summary {
 
 /*CONTACT-LOGIN-------------------------------------------------------------------------*/
 .botonMov {
-  background: linear-gradient(to right, yellowgreen, darkgreen);
+  background: green;
   border-radius: 20px;
   display: block;
   position: relative;
   width: 200px;
   cursor: pointer;
-  color: darkblue;
+  color: blanchedalmond;
   text-align: center;
   text-decoration: none;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -565,8 +589,8 @@ summary {
           animation: resaltado 3s infinite;
 }
 .botonMov:hover {
-  background: linear-gradient(to right, whitesmoke, blue);
-  color: darkblue;
+  background: lightblue;
+  color: blue;
   transform: scale(1);
   transition: 0.3s;
 }
@@ -576,7 +600,7 @@ summary {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(to right, rgb(227, 236, 96), rgb(21, 156, 33));
+  background: lightgreen;
 }
 
 /* Formulario de contacto - Login*/
@@ -616,13 +640,13 @@ form textarea {
 }
 
 .form-label1 {
-  color: darkslategray;
+  color: black;
   font-size: 15px;
   font-family: cursive;
   font-weight: bold;
 }
 .form-label1:hover {
-  color: whitesmoke;
+  color: darkgreen;
 }
 
 .mb-3 {

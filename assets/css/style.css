@@ -498,7 +498,7 @@ footer a {
 
 }
 
-.container--footer {
+.contenedor--footer {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -545,7 +545,7 @@ h4 {
 }
 
 /*Contenedores*/
-.container_city {
+.contenedor_city {
     width: 100%;
     display: flex; /* inicio de flexbox*/
     flex-direction: row; /* vertical u hotizontal*/
@@ -556,7 +556,7 @@ h4 {
 }
 
 @media only screen and (max-width: 1280px) {
-    .container_city {
+    .contenedor_city {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
@@ -567,7 +567,7 @@ h4 {
     }
 }
 
-.container_country {
+.contenedor_country {
     width: 100%;
     display: flex; /* inicio de flexbox*/
     flex-direction: row; /* vertical u hotizontal*/
@@ -578,7 +578,7 @@ h4 {
 }
 
 @media only screen and (max-width: 1280px) {
-    .container_country {
+    .contenedor_country {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;

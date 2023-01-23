@@ -55,7 +55,7 @@ h4 {
 }
 
 /*Contenedores*/
-.container_city {
+.contenedor_city {
     width: 100%;
     display: flex; 
     flex-direction: row; 
@@ -70,11 +70,6 @@ h4 {
         text-align: center;
         
     }
-}
-
-
-.container_country {
-    @extend .container_city
 }
 
 
@@ -100,6 +95,10 @@ summary {
     }
 
     background: map-get(c.$colores, gradprincipal);
+    &:hover{
+        background-color: lightseagreen;
+        color: whitesmoke;
+    }
 
 }
 /*Carrusel de imagenes*/
