@@ -499,6 +499,7 @@ h4 {
   color: darkred;
   list-style-type: circle;
   font-size: 25px;
+  text-align: center;
 }
 
 .textoLogin {
